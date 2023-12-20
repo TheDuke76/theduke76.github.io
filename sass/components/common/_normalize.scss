@@ -1,0 +1,363 @@
+/* Common */
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* HTML5 display definitions */
+/* Corrects `block` display not defined in IE 8/9. */
+
+article, aside, details, figcaption, figure, hgroup, section, summary {
+	display: block;
+}
+
+/* Corrects `inline-block` display not defined in IE 8/9. */
+ 
+audio, canvas {
+	display: inline-block;
+}
+
+/* Prevents modern browsers from displaying `audio` without controls.
+   Remove excess height in iOS 5 devices. */
+ 
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+/* Addresses styling for `hidden` attribute not present in IE 8/9. */
+ 
+[hidden] {
+	display: none;
+}
+
+/* Base */
+ 
+/* 1. Sets default font family to sans-serif.
+   2. Prevents iOS text size adjust after orientation change, without disabling user zoom. */
+ 
+@at-root html#{&} {
+	font-family: sans-serif; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+	-ms-text-size-adjust: 100%; /* 2 */
+}
+
+/* Removes default margin. */
+ 
+body {
+	margin: 0;
+}
+
+/* Links */
+ 
+/* Addresses `outline` inconsistency between Chrome and other browsers. */
+ 
+a:focus {
+	outline: thin dotted;
+}
+ 
+/* Improves readability when focused and also mouse hovered in all browsers. */
+ 
+a:active, a:hover {
+	outline: 0;
+}
+
+/* Embedded content */
+ 
+/* Removes border when inside `a` element in IE 8/9. */
+ 
+img {
+	border: 0;
+}
+
+/* Corrects overflow displayed oddly in IE 9. */
+ 
+svg:not(:root) {
+	overflow: hidden;
+}
+
+/* Figures */
+ 
+/* Addresses margin not present in IE 8/9 and Safari 5. */
+ 
+figure {
+	margin: 0;
+}
+
+/* Tables */
+ 
+/* Remove most spacing between table cells. */
+ 
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Default Adjustments */
+ 
+::-moz-selection {
+	background: #3197fc; 
+	text-shadow: none; 
+}
+
+::selection { 
+	background: #3197fc; 
+	text-shadow: none; 
+}
+
+hr { 
+	display: block; 
+	height: 1px; 
+	border: 0;
+	border-top: 2px solid $brand_color_lite; 
+	margin: 0 0 25px 0;
+	padding: 0;
+}
+
+img { 
+	max-width:100% !important; 
+	height:auto !important; 
+	vertical-align: middle; 
+}
+
+p { 
+	margin:0 0 1em 0;
+}
+
+.ir { 
+	background-color: transparent;
+	border: 0; 
+	overflow: hidden; 
+	*text-indent: -9999px;
+	&::before { 
+		content: ""; 
+		display: block;
+		width: 0;
+		height: 100%;
+	}
+}
+
+.hidden { 
+	display: none;
+	visibility: hidden; 
+}
+
+.visuallyHidden {
+	border: 0;
+	clip: rect(0 0 0 0); 
+	height: 1px; 
+	margin: -1px; 
+	overflow: hidden; 
+	padding: 0; 
+	position: absolute;
+	width: 1px; 
+	&.focusable {
+		&:active, &:focus { 
+			clip: auto;
+			height: auto;
+			margin: 0; 
+			overflow: visible; 
+			position: static;
+			width: auto;
+		}
+	}
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.clearfix, .bgWrapper {
+	&::before, &::after { 
+		content: ""; 
+		display: table; 
+	}
+}
+
+.clearfix, .bgWrapper {
+	&::after { 
+		clear: both;
+	}
+}
+
+.clearfix, .bgWrapper { 
+	zoom: 1; 
+}
+
+.hide, .accessibleForm label.hide { 
+	display:none;
+}
+
+.bold { 
+	font-weight:bold;
+}
+
+.italic { 
+	font-style:italic !important;
+}
+
+.strike {
+	text-decoration:line-through !important;
+}
+
+.vtop {
+	vertical-align:top;
+}
+
+.center {
+	text-align:center;
+}
+
+.left { 
+	text-align:left;
+}
+
+.right { 
+	text-align:right; 
+}
+
+.float {
+	&Left { 
+		float:left; 
+	}
+	&Right { 
+		float:right; 
+	}
+}
+
+.nowrap { 
+	white-space:nowrap;
+}
+
+.borderless { 
+	border:0; 
+	border-collapse:collapse;
+}
+
+.breakforprint { 
+	page-break-after:always;
+}
+
+.clear { 
+	overflow:hidden;
+	clear:both; 
+	height:0; 
+	margin:0; 
+	font-size:1px;
+	line-height:0;
+}
+
+.skip { 
+	position:absolute; 
+	left:-10000px; 
+	width:1px; 
+	height:1px; 
+	overflow:hidden;
+}
+
+.important { 
+	color:red; 
+	font-weight:bold; 
+	text-transform:uppercase;
+}
+
+/* ## Base List styles ## */
+ul, ol { 
+	margin:0 0 1em;
+}
+
+.noBullet { 
+	padding:0 0 0 1em; 
+	list-style-type:none;
+}
+
+.noIndent {
+	padding:0;
+	list-style-type:none;
+}
+
+.bulletSquare { 
+	list-style-type:square;
+}
+
+/* ## Note/hint text or link ## */
+.note { 
+	font-size:.8em; 
+	color:$text_color_default;
+	a, a:link, a:visited { 
+		text-decoration:underline;
+	}
+}
+
+/* PRIMARY LAYOUT STYLES */
+/* Enter unique styles for site here */  
+/* Removed :link from the list to help cut down on writing time and prevent the need for extra specificity for classes */
+a, a:visited { 
+	color:$link_text_color_alt_lite; 
+	text-decoration:none;
+}
+
+a:hover, a:active, a:focus { 
+	color:$link_text_color_alt_lite; 
+	text-decoration:none;
+}
+
+a:active, a:focus { 
+	outline:0; 
+}
+
+.largeLink {
+	margin:0 0 15px 0;
+	a {
+		font-size:1em; 
+		font-weight:bold;
+		&.pdf {
+			background:url(/cms/images/layout/icon_pdf.png) no-repeat 0 2px; 
+			padding:0 0 0 34px; 
+			display:inline-block;
+		}
+	}
+}
+ 
+/* Link Modifiers */
+a:hover, a:active, a:focus {
+	.text { 
+		text-decoration:none;
+	}
+}
+
+a {
+	[class^="icon-"] { 
+		text-decoration:none;
+	}
+	&.removeLink { 
+		color:$link_text_color_default;
+		font-size:0.9em;
+	}
+}
+
+/* Link Lists */
+/* We use '<ul class="linkList">' when setting a list of organized links. */
+ul.linkList {
+	margin:0 0 15px 0;
+	padding:0; 
+	list-style-type:none;
+
+	li {
+		margin-bottom:8px;
+	}
+
+	a, a:link, a:visited { 
+		text-decoration:none;
+	}
+	
+	a:hover, a:active {
+		text-decoration:underline;
+	}
+}
+
+/* ## Start Up Layout - Use, modify, or delete as need be ## */
+@at-root html#{&}, body {
+	overflow-x:hidden;
+}
+
+body {
+	//background:$bgcolor_alt; 
+	font-family: 'Open Sans', sans-serif;
+}

@@ -1,0 +1,229 @@
+/* Variables */
+	$a: #000;
+	$b: #CB171F;
+	$c: #FFF;
+	$d: #CCC;
+	$e: #EEE;
+	$f: #999;
+	$g: #777;
+	$h: #666;
+	$i: #2B4487;
+	$j: #DDD;
+	$k: #222;
+	$l: #1076D5;
+	$m: #303030;
+	$n: #2F841D;
+	$o: #DEEFDE;
+
+/* Brand Colors */
+	$brand_color_dark: $a;
+	$brand_color_lite: $b;
+	$brand_color_lite_shadow: #7B0404;
+	$brand_color_alt: #184279;
+	$brand_color_alt_shadow: #032056;
+	
+/* Text Colors */
+	/* Default Text Colors */
+	$text_color_default: $a;
+	$alternate_text_color: $c;	
+	$text_color_alt: $c;
+	$text_color_alt_lite: $d;
+	$text_color_alt_lite2: $e;
+	$text_color_alt_med: $f;
+	$text_color_alt_med2: $g;
+	$text_color_alt_dark: $h;
+
+	/* Link Text Colors */	
+	$link_text_color_default: $b;
+	$link_focus_text_color_default: $a;
+	$link_text_color_alt_dark: $a;
+	$link_focus_text_color_alt_dark: $b;
+	$link_focus_text_color_alt_dark_alt: $c;
+	$link_text_color_alt_lite: $c;
+	$link_focus_text_color_alt_lite: $b;
+	
+	/* Store Locator Text Colors */
+	$storelocator_link_text_color: #1956C0;
+	
+	/* Button Text Colors */
+	$button_text_color_default: $c;
+	$button_text_color_alt_dark: $a;
+	$button_focus_text_color_alt_dark: $c;
+	$button_text_color_alt_lite: $b;
+	$button_focus_text_color_alt_lite: $c;
+	$button_text_color_alt_lite2: $a;
+	$button_focus_text_color_alt_lite2: $c;
+	
+	/* Header Nav Text Colors */
+	$header_nav_tab_text_color: $a;
+	$header_nav_tab_focus_text_color: $c;
+	$header_nav_tab_dropdown_link_color: $c;
+	$header_nav_tab_dropdown_link_focus_color: $a;
+
+	/* Vehicle Picker Banner Text Colors */
+	$vehicle_picker_banner_text_color: $c;
+	$vehicle_picker_dropdown_text_color: $c;
+	$vehicle_picker_optionselector_text_color: $b;
+
+	/* PDP Text Colors */
+	$pdp_product_card_text_color: $c;
+	$pdp_details_button_text_color: $a;
+	$pdp_details_button_focus_text_color: $c;
+	$pdp_productTools_text_color: $h;
+	$pdp_productTools_focus_text_color: $b;
+		
+	/* 404 Text Colors */
+	$_404_greenHeading_text_color: #62B548;
+
+	/* Footer Text Colors */
+	$footer_text_color: $c;
+	$footer_button_text_color: $c;
+	
+	/* Admin Helpers Text Colors */
+	$admin_region_text_color: $i;
+	
+	/* Miscellaneous */
+	$classGreen: #339900;
+
+/* Background Colors */
+	/* Default Background Colors */
+	$bgcolor_default: $c;
+	$bgcolor_alt: $a;
+	$bgcolor_color_alt_med: $f;
+	$bgcolor_alt_med2: $g;
+	$bgcolor_color_alt_lite: $d;
+	$bgcolor_alt_lite2: $e;
+	$bgcolor_alt_lite3: $j;
+	$bgcolor_alt_dark: $k;
+
+	/* Button Background Colors */
+	$button_bgcolor_default: $b;	
+	$button_focus_bgcolor_default: $a;
+	$button_bgcolor_alt_dark: $a;
+	$button_bgcolor_alt_med: $g;
+	$button_bgcolor_alt_med2: $f;
+	$button_bgcolor_alt_lite: $c;
+	$button_focus_bgcolor_alt_lite: $b;
+	$button_bgcolor_alt_lite2: $e;
+	$button_focus_bgcolor_alt_lite2: $a;
+	$button_Instagram_bgcolor: $l;
+	$button_Account_bgcolor: $h;
+	
+
+	/* Header Nav Background Colors */
+	$header_nav_tab_focus_bgcolor: $m;
+	$header_nav_tab_dropdown_bgcolor: $m;
+	$header_nav_tab_dropdown_link_bgcolor: $c;
+
+	/* Vehicle Picker Banner Background Colors */
+	$vehicle_picker_banner_bgcolor: $k;
+	$vehicle_picker_dropdown_bgcolor: $m;
+	$vehicle_picker_optionselector_bgcolor: $c;
+	$vehicle_picker_optionselector_list_focus_bgcolor: #E6E6E6;
+
+	/* PDP Product Card Background Colors */
+	$pdp_product_card_bgcolor: $j;
+	$pdp_product_button_bgcolor: #C44D03;
+	$pdp_product_button_focus_bgcolor: $a;
+	$pdp_select_button_bgcolor: $n;
+	$pdp_details_row_label_bgcolor: $e;
+	$pdp_details_button_bgcolor: $e;
+	$pdp_details_button_focus_bgcolor: $a;
+	$pdp_csr_swatchlist_bgcolor: $n;
+	$pdp_note_bgcolor: #FFFFEB;
+	
+	/* Overlay Background Colors */
+	$overlay_orange_button_bgcolor: #E75C01;
+
+	/* Product List Product Card Background Colors */
+	$product_list_product_card_bgcolor: $j;
+	$product_list_product_card_PoductFlag: #FECC2F;
+	
+	/* Store Locator Background Colors */
+	$vendorType1_bgcolor: $b;
+	$vendorType2_bgcolor: $n;
+	$vendorType3_bgcolor: #9F00E6;
+	$vendorType4_bgcolor: #425FDF;
+	$vendorType5_bgcolor: #CCCC00;
+	$vendorType6_bgcolor: #FFA221;	
+	$locationSelected_bgcolor: $o;
+
+	/* Footer Background Colors	*/
+	$footer_bgcolor: $k;
+	$footer_card_bgcolor: #343434;
+	$footer_button_bgcolor: #737373;
+	$footer_button_focus_bgcolor: $a;
+	
+	/* Admin Helpers Background Colors */
+	$admin_region_bgcolor: #B8CDE7;
+	$admin_LimitTextBox_bgcolor: #1C4E87;
+	$admin_LimitTextBox2_bgcolor: #A8C6E0;
+	$admin_button_bgcolor: #112848;
+	
+	/* Alert Background Colors */
+	$alert_bgcolor: #FEFF99;
+	
+	/* Error Message Background Colors */
+	$errorMessage_bgcolor: #FCD5D5;
+	
+	/* Custom Landing Background Colors */
+	$swatches_li_blk_bgcolor: $a;
+	$swatches_li_tan_bgcolor: #A79589;
+	$swatches_li_gry_bgcolor: #838383;
+	$swatches_li_cco_bgcolor: #5F5958;
+	
+	/* Miscellaneous */
+	$mark: #FF0; 
+
+/* Border Colors */
+	/* Default Border Colors */
+	$border_color_default: $a;
+	$border_color_alt: $c;
+	$border_color_alt_lite: $d;
+	$border_color_alt_lite2: $e;
+	$border_color_alt_lite3: $j;
+	$border_color_alt_med: $f;
+	$border_color_alt_med2: $g;
+	$border_color_alt_dark: $k;
+
+	/* Link Border Colors */
+	$link_border_color_default: $b;
+	$link_border_color_alt_dark: $a;
+	$link_border_color_alt_lite: $c;
+	$link_focus_border_color: $b;
+	
+	/* Store Locator Background Colors */
+	$locationSelected_border_color: $o;
+	$gold_dealer_listing_border_color: #FFD700;
+	$silver_dealer_listing_border_color: #D3D3D3;
+	$bronze_dealer_listing_border_color: #CD7F32;	
+	
+	/* Button Border Colors */
+	$button_border_color_default: $b;
+	$button_border_color_alt: $d;
+	$button_border_colorr_alt_lite: $b;;
+	$button_Instagram_border_color: $l;
+	
+	/* Header Border Colors */
+	$header_border_color: #E1E1E1;
+
+	/* Overlay Border Colors */
+	$overlay_border_color: #AE0303;
+	
+	/* Admin Helpers Border Colors */
+	$admin_helper_border_color: $i;
+	
+	/* PDP Border Colors */
+	$pdp_productTools_border_color: $h;
+	$pdp_productTools_focus_border_color: $b;
+	
+	/* Admin Helpers Border Colors */
+	$admin_button_border_color: #A5B9C8;
+	
+	
+
+/* Link Colors */
+
+$disabled: $e;
+$greyed_out: $h;
+
