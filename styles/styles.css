@@ -503,7 +503,6 @@ footer {
   transform: rotate(-50deg);
   margin-top: 175px;
   margin-left: -69px;
-  z-index: 0;
 }
 .rectangle::before {
   content: "";
