@@ -563,6 +563,10 @@ body {
   font-size: 1.2rem;
 } /* =14px */
 /*Addresses `h1` font sizes within `section` and `article` in Firefox 4+, Safari 5, and Chrome. */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px 0;
+}
+
 h1 {
   font-size: 2rem;
 }
@@ -591,10 +595,6 @@ h2::after {
 }
 h2::before {
   margin-left: -45px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 10px 0;
 }
 
 /* Addresses styling not present in IE 8/9, Safari 5, and Chrome. */
