@@ -428,7 +428,7 @@ main {
   position: relative;
   max-width: 72.5em;
 }
-@media screen and (min-width: 76.8em) {
+@media screen and (min-width: 76.8rem) {
   main {
     grid-column: 3/span 8;
   }
@@ -578,10 +578,11 @@ h2 {
   font-size: 3rem;
   position: relative;
   margin-left: -28px;
+  margin-right: -30px;
 }
 @media screen and (min-width: 768px) {
   h2 {
-    margin-right: -30px;
+    margin-right: 0;
   }
   h2::after, h2::before {
     content: "";
