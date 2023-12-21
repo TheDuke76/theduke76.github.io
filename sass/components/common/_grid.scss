@@ -22,29 +22,29 @@ main {
     position: relative;
     max-width: 72.5em;
 
-    @media screen and (min-width: 76.8em) {
+    @media screen and (min-width: 48em) {
         grid-column: 3 / span 8;
     }
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 62.5em) {
         background: rgba(255, 255, 255, 0.5);
     }
 }
 
 article {
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 62.5em) {
         padding-right: 50%;
     }
 
-    @media screen and (min-width: 1100px) {
+    @media screen and (min-width: 68.75em) {
         padding-right: 40%;
     }
 
-    @media screen and (min-width: 1370px) {
+    @media screen and (min-width: 85.625em) {
         padding-right: 30%;
     }
 
-    @media screen and (min-width: 1730px) {
+    @media screen and (min-width: 108.125em) {
         padding-right: 20%;
     }
 }

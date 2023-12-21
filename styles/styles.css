@@ -428,33 +428,33 @@ main {
   position: relative;
   max-width: 72.5em;
 }
-@media screen and (min-width: 76.8em) {
+@media screen and (min-width: 48em) {
   main {
     grid-column: 3/span 8;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 62.5em) {
   main {
     background: rgba(255, 255, 255, 0.5);
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 62.5em) {
   article {
     padding-right: 50%;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 68.75em) {
   article {
     padding-right: 40%;
   }
 }
-@media screen and (min-width: 1370px) {
+@media screen and (min-width: 85.625em) {
   article {
     padding-right: 30%;
   }
 }
-@media screen and (min-width: 1730px) {
+@media screen and (min-width: 108.125em) {
   article {
     padding-right: 20%;
   }
@@ -580,12 +580,12 @@ h2 {
   margin-left: -28px;
   margin-right: -28px;
 }
-@media screen and (min-width: 100em) {
+@media screen and (min-width: 62.5em) {
   h2 {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
   h2::after, h2::before {
     content: "";
     display: block;
