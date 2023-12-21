@@ -26,7 +26,7 @@
         grid-row: 5 / span 5;
         grid-column: 9 /span 3;
         position: relative;
-        box-shadow: 346px -165px 0 40px grey, 230px -60px 1px 40px green, 80px -60px 0px 40px red;
+        box-shadow: 346px -165px 0 40px #04C4C7, 230px -60px 1px 40px #FFF992, 80px -60px 0px 40px #000;
         color: #000;
         display: block;
         box-sizing: border-box;
@@ -38,7 +38,7 @@
         border-color: #000;
         width: 400px;
         height: 400px;
-        background: blue;
+        background: #382785;
         grid-row: 5 / span 5;
         grid-column: 9 /span 3;
         position: relative;
@@ -50,7 +50,7 @@
 .triangle {
     border-left: 290px solid transparent;
     border-right: 130px solid transparent;
-    border-top: 230px solid #f00;
+    border-top: 230px solid #FFA89F;
     z-index: 1;
     margin-left: -60px;
     margin-top: 55px;
