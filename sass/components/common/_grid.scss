@@ -10,13 +10,14 @@ header {
     grid-row: 1;
     min-height: 0;
     grid-column: 1 / span 12;
+    z-index: 1;
 }
 
 section {
     grid-column: 3 / span 8;
     padding: 20px;
     background: rgba(255, 255, 255, 0.5);
-    z-index: 3;
+    z-index: 1;
     grid-row: 2;
     position: relative;
 }
@@ -25,4 +26,5 @@ footer {
     margin-top: auto;
     border: 2px solid black;
     grid-column: 1 / span 12;
+    z-index: 1;
 }
