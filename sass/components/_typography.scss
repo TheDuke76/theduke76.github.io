@@ -25,25 +25,29 @@ h2 {
     position: relative;
     margin-left: -28px;
 
-	&::after, &::before {
-		content: '';
-		display: block;
-		position: absolute;
-		width: 30px;
-		height: 100%;
-		transform: skew(-34deg);
-		background: #382785;
-		top: 0;
-	}
-
-	&::after {	
-		right: 0;
-		margin-right: -16px;
-	}
-
-	&::before {
-		margin-left: -45px;
-	}
+	@media screen and (min-width:768px) {
+		margin-right: -30px;
+		
+		&::after, &::before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 30px;
+			height: 100%;
+			transform: skew(-34deg);
+			background: #382785;
+			top: 0;
+		}
+	
+		&::after {	
+			right: 0;
+			margin-right: -16px;
+		}
+	
+		&::before {
+			margin-left: -45px;
+		}
+	}	
 }
 
 /* Addresses styling not present in IE 8/9, Safari 5, and Chrome. */
