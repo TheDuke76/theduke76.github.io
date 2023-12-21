@@ -567,6 +567,32 @@ h1 {
   font-size: 2rem;
 }
 
+h2 {
+  background: #382785;
+  padding: 5px 0 5px 30px;
+  color: #FFF;
+  font-size: 3rem;
+  position: relative;
+  margin-left: -28px;
+}
+h2::after, h2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  transform: skew(-34deg);
+  background: #382785;
+  top: 0;
+}
+h2::after {
+  right: 0;
+  margin-right: -16px;
+}
+h2::before {
+  margin-left: -45px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px 0;
 }
