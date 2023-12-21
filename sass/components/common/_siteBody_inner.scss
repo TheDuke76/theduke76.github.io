@@ -1,0 +1,35 @@
+.site {
+	&Body { 
+		position:relative; 
+		z-index:6;
+	}
+	&Inner {
+		background:$bgcolor_alt;
+		color:$text_color_alt; 
+		margin:0 -10px 30px -10px;
+		@media only screen and (min-width:58.750em) {
+			margin:0 0 30px 0;
+		}
+		@media only screen and (max-width:48em) {
+			margin-bottom: 0;
+		}
+		p {
+			color:$text_color_default;
+			font-size:.875em; 
+			font-weight:700;
+			@media only screen and (max-width:58.750em) {
+				font-size:.813em;
+			}
+		}
+		.block {
+			ul, ol {
+				li {
+					color:$text_color_default;
+					font-size:.875em; 
+					font-weight:700;
+				}
+			}
+		}
+		
+	}
+}
