@@ -466,7 +466,7 @@ footer {
   grid-row: 5/span 5;
   grid-column: 9/span 3;
   position: relative;
-  box-shadow: 346px -165px 0 40px #04C4C7, 230px -60px 1px 40px #FFF992, 80px -60px 0px 40px #000;
+  box-shadow: 346px -165px 0 40px #96CAB4, 230px -60px 1px 40px #FFF992, 80px -60px 0px 40px #04C4C7;
   color: #000;
   display: block;
   box-sizing: border-box;
@@ -493,6 +493,39 @@ footer {
   margin-left: -60px;
   margin-top: 55px;
   width: 0px;
+}
+
+.rectangle {
+  width: 200px;
+  height: 0px;
+  border: 10px solid #000;
+  background: #000;
+  transform: rotate(-50deg);
+  margin-top: 175px;
+  margin-left: -69px;
+  z-index: 0;
+}
+.rectangle::before {
+  content: "";
+  width: 200px;
+  height: 0px;
+  border: 10px solid #000;
+  background: #000;
+  margin-top: 25px;
+  margin-left: -11px;
+  z-index: 0;
+  display: block;
+}
+.rectangle::after {
+  content: "";
+  width: 200px;
+  height: 0px;
+  border: 10px solid #000;
+  background: #000;
+  margin-top: 15px;
+  margin-left: -10px;
+  z-index: 0;
+  display: block;
 }
 
 /* Typography */
