@@ -425,10 +425,65 @@ section {
 }
 
 footer {
-  grid-row: last;
   margin-top: auto;
   border: 2px solid black;
   grid-column: 1/span 12;
+}
+
+.background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+.background span {
+  grid-row: 8;
+  grid-column: 11;
+  display: block;
+}
+
+.dots::after {
+  content: "";
+  margin-top: 31px;
+  border-radius: 50%;
+  border-color: #000;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  grid-row: 5/span 5;
+  grid-column: 9/span 3;
+  position: relative;
+  z-index: 0;
+  box-shadow: 346px -165px 0 40px grey, 230px -60px 1px 40px green, 80px -60px 0px 40px red;
+  color: #000;
+  display: block;
+  box-sizing: border-box;
+}
+.dots::before {
+  content: "";
+  border-radius: 50%;
+  border-color: #000;
+  width: 400px;
+  height: 400px;
+  background: blue;
+  grid-row: 5/span 5;
+  grid-column: 9/span 3;
+  position: relative;
+  z-index: 0;
+  color: #000;
+  display: block;
+}
+
+.triangle {
+  border-left: 290px solid transparent;
+  border-right: 130px solid transparent;
+  border-top: 230px solid #f00;
+  z-index: 1;
+  margin-left: -60px;
+  margin-top: 55px;
+  width: 0px;
 }
 
 /* Typography */
