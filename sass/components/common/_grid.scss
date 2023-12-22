@@ -33,7 +33,9 @@ header {
                 background: $bgcolor_default;
 
                 a {
-                    color: #382785;
+                    &:link, &:visited, &:active  {
+                        color: #382785;
+                    }
                 }
             }
         }

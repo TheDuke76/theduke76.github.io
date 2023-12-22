@@ -437,7 +437,7 @@ header nav ul li {
   padding: 2rem;
   background: #FFF;
 }
-header nav ul li a {
+header nav ul li a:link, header nav ul li a:visited, header nav ul li a:active {
   color: #382785;
 }
 
