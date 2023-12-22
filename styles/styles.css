@@ -577,12 +577,12 @@ ul {
     columns: 2;
   }
 }
-@media screen and (min-width: 530px) and (max-width: 699px), (min-width: 800px) and (max-width: 849px), (min-width: 1280px) and (max-width: 1479px) {
+@media screen and (min-width: 530px) and (max-width: 699px), (min-width: 800px) and (max-width: 999px), (min-width: 1280px) and (max-width: 1479px) {
   .columns {
     columns: 3;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 767px), (min-width: 850px) and (max-width: 999px), (min-width: 1480px) {
+@media screen and (min-width: 700px) and (max-width: 767px), (min-width: 1480px) {
   .columns {
     columns: 4;
   }
