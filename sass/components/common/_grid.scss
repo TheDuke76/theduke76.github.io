@@ -50,8 +50,10 @@ header {
                 font-size: 1.8rem;
                 display: list-item;
                 text-align: center;
+                display:none;
 
                 button {
+                    transform: skew(34deg);
                     background: transparent;
                     border: none;
 
@@ -60,8 +62,10 @@ header {
                     }
                 }
 
-                &:not(.col--2) {
-                    display: none;                    
+                &.col--2 {
+                    @media screen and (min-width:48em) {
+                        display: none;  
+                    }                  
                 }
 
                 &:hover, &:focus, &.active, &:first-child {
