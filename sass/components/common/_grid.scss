@@ -51,6 +51,11 @@ header {
                 &:first-child {
                     background: $bgcolor_default;
                     display: list-item;
+                    padding-left: 2.8rem;
+
+                    @media screen and (min-width:48em) {
+                        padding-left: 0;
+                    }
                 }
 
                 a {

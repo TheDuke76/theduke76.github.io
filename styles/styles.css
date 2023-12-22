@@ -456,6 +456,12 @@ header nav ul li:hover, header nav ul li:focus, header nav ul li.active, header 
 header nav ul li:first-child {
   background: #FFF;
   display: list-item;
+  padding-left: 2.8rem;
+}
+@media screen and (min-width: 48em) {
+  header nav ul li:first-child {
+    padding-left: 0;
+  }
 }
 header nav ul li a:link, header nav ul li a:visited, header nav ul li a:active {
   color: #382785;
