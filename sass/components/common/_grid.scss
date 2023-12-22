@@ -16,6 +16,7 @@ header {
     background: #382785;
 
     nav {
+        grid-column: 1 / span 7;
         grid-column: 3 / span 7;
 
         &, ul {
@@ -49,14 +50,7 @@ header {
 
                 &:first-child {
                     background: $bgcolor_default;
-                    padding-left: 2rem;
-                    margin-left: -4rem;
                     display: list-item;
-
-                    @media screen and (min-width:48em) {
-                        padding-left: 0;
-                    }
-
                 }
 
                 a {

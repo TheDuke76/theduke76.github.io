@@ -422,6 +422,7 @@ header {
   background: #382785;
 }
 header nav {
+  grid-column: 1/span 7;
   grid-column: 3/span 7;
 }
 header nav, header nav ul {
@@ -454,14 +455,7 @@ header nav ul li:hover, header nav ul li:focus, header nav ul li.active, header 
 }
 header nav ul li:first-child {
   background: #FFF;
-  padding-left: 2rem;
-  margin-left: -4rem;
   display: list-item;
-}
-@media screen and (min-width: 48em) {
-  header nav ul li:first-child {
-    padding-left: 0;
-  }
 }
 header nav ul li a:link, header nav ul li a:visited, header nav ul li a:active {
   color: #382785;
