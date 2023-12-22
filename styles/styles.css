@@ -631,6 +631,13 @@ h3 {
   font-size: 2rem;
 }
 
+h4 {
+  margin: 0;
+}
+h4 + p {
+  font-style: italic;
+}
+
 /* Addresses styling not present in IE 8/9, Safari 5, and Chrome. */
 abbr[title] {
   border-bottom: 1px dotted;
