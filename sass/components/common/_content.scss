@@ -2,10 +2,15 @@ ul {
     padding-left: 2rem;
 }
 .columns {
-    columns: 2;
+    columns: 1;
+
+    @media screen and (min-width: 380px) and (max-width: 529px),
+    (min-width: 768px) and (max-width: 799px) {
+        columns: 2;
+    }
 
     @media screen and (min-width:530px) and (max-width: 699px), 
-    (min-width: 768px) and (max-width:849px), 
+    (min-width: 800px) and (max-width:849px), 
     (min-width: 1280px) and (max-width: 1479px) {
         columns: 3;
     }
