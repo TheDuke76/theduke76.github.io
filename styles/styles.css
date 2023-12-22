@@ -459,12 +459,12 @@ main {
     padding-right: 20%;
   }
 }
-@media screen and (min-width: 101.25) {
+@media screen and (min-width: 101.25em) {
   article {
     padding-right: 10%;
   }
 }
-@media screen and (min-width: 109.375) {
+@media screen and (min-width: 109.375em) {
   article {
     padding-right: 0;
   }
