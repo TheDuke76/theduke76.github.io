@@ -456,10 +456,16 @@ header nav ul li {
   margin: 0 0 0 0.2rem;
   text-transform: uppercase;
   font-size: 1.8rem;
-  display: none;
+  display: list-item;
+  text-align: center;
 }
 header nav ul li:not(.col--2) {
-  display: list-item;
+  display: none;
+}
+header nav ul li:not(.col--2) button {
+  transform: skew(34deg);
+  background: transparent;
+  border: none;
 }
 header nav ul li:hover, header nav ul li:focus, header nav ul li.active, header nav ul li:first-child {
   background: #FFF;
@@ -472,10 +478,6 @@ header nav ul li:first-child {
 @media screen and (min-width: 48em) {
   header nav ul li:first-child {
     padding-left: 0;
-  }
-}
-@media screen and (min-width: 48em) {
-  header nav ul li {
     text-align: center;
   }
 }

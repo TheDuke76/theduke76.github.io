@@ -48,10 +48,17 @@ header {
                 margin: 0 0 0 0.2rem;
                 text-transform: uppercase;
                 font-size: 1.8rem;
-                display: none;
+                display: list-item;
+                text-align: center;
 
                 &:not(.col--2) {
-                    display: list-item;
+                    display: none;
+
+                    button {
+                        transform: skew(34deg);
+                        background: transparent;
+                        border: none;
+                    }
                 }
 
                 &:hover, &:focus, &.active, &:first-child {
@@ -65,11 +72,8 @@ header {
 
                     @media screen and (min-width:48em) {
                         padding-left: 0;
+                        text-align: center;
                     }
-                }
-
-                @media screen and (min-width: 48em) {
-                    text-align: center;
                 }
 
                 a {
