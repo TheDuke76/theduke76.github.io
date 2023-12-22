@@ -30,11 +30,23 @@ header {
             
             li {
                 padding: 2rem;
-                background: $bgcolor_default;
+                background: rgba(255, 255, 255, 0.5);
+                font-weight: bold;
+                transform: skew(-34deg);
+                margin: 0 0 0 0.2rem;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 1.8rem;
+
+                &:hover, &:focus {
+                    background: $bgcolor_default;
+                }
 
                 a {
                     &:link, &:visited, &:active  {
                         color: #382785;
+                        transform: skew(34deg);
+                        display: inline-block;
                     }
                 }
             }
@@ -49,7 +61,7 @@ main {
     z-index: 1;
     grid-row: 2;
     position: relative;
-    max-width: 72.5em;
+    max-width: 73.3em;
 
     @media screen and (min-width: 48em) {
         grid-column: 3 / span 7;
