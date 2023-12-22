@@ -480,7 +480,7 @@ footer {
 .background {
   position: absolute;
   width: 100vw;
-  max-width: 186rem;
+  max-width: 220rem;
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -570,7 +570,17 @@ ul {
 }
 
 .columns {
-  columns: 4;
+  columns: 2;
+}
+@media screen and (min-width: 530px) and (max-width: 699px), (min-width: 768px) and (max-width: 849em) {
+  .columns {
+    columns: 3;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 767px), (min-width: 850px) {
+  .columns {
+    columns: 4;
+  }
 }
 
 /* Typography */
