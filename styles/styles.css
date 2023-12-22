@@ -430,6 +430,12 @@ header nav, header nav ul {
 }
 header nav ul {
   grid-column: 1/span 7;
+  list-style: none;
+  padding: 2rem;
+  margin: 0;
+}
+header nav ul li {
+  padding: 2rem;
 }
 
 main {
