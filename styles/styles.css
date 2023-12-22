@@ -425,6 +425,7 @@ header {
   position: relative;
 }
 header::before {
+  content: "";
   left: -70%;
   top: 0;
   width: 100%;
