@@ -50,6 +50,10 @@ header {
                 font-size: 1.8rem;
                 display: none;
 
+                &:not(.col--2) {
+                    display: list-item;
+                }
+
                 &:hover, &:focus, &.active, &:first-child {
                     background: $bgcolor_default;
                 }

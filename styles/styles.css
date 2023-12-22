@@ -458,6 +458,9 @@ header nav ul li {
   font-size: 1.8rem;
   display: none;
 }
+header nav ul li:not(.col--2) {
+  display: list-item;
+}
 header nav ul li:hover, header nav ul li:focus, header nav ul li.active, header nav ul li:first-child {
   background: #FFF;
 }
