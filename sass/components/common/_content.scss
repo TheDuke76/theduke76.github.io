@@ -1,6 +1,33 @@
 ul {
     padding-left: 2rem;
 }
+
+.content {
+    @media screen and (min-width: 62.5em) {
+        padding-right: 50%;
+    }
+
+    @media screen and (min-width: 70em) {
+        padding-right: 40%;
+    }
+
+    @media screen and (min-width: 85.625em) {
+        padding-right: 30%;
+    }
+
+    @media screen and (min-width: 98.75em) {
+        padding-right: 20%;
+    }
+
+    @media screen and (min-width: 107.5em) {
+        padding-right: 10%;
+    }
+
+    @media screen and (min-width: 125em) {
+        padding-right: 0;
+    }
+}
+
 .columns {
     columns: 1;
 
