@@ -422,7 +422,7 @@ header {
   background: #382785;
 }
 header nav {
-  grid-column: 1/span 7;
+  grid-column: 1/span 12;
 }
 @media screen and (min-width: 48em) {
   header nav {
@@ -431,7 +431,12 @@ header nav {
 }
 header nav, header nav ul {
   display: grid;
-  grid-template-columns: subgrid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width: 48em) {
+  header nav, header nav ul {
+    grid-template-columns: subgrid;
+  }
 }
 header nav ul {
   grid-column: 1/span 7;
