@@ -20,7 +20,7 @@
         content: '';
         margin-top: 31px;
         border-radius: 50%;
-        border-color: #000;
+        border-color: $border_color_default;
         width: 50px;
         height: 50px;
         background: transparent;
@@ -28,7 +28,7 @@
         grid-column: 9 /span 3;
         position: relative;
         box-shadow: 346px -165px 0 40px #96CAB4, 230px -60px 1px 40px #FFF992, 80px -60px 0px 40px #04C4C7;
-        color: #000;
+        color: $text_color_default;
         display: block;
         box-sizing: border-box;
     }
@@ -36,14 +36,14 @@
     &::before {
         content: '';
         border-radius: 50%;
-        border-color: #000;
+        border-color: $border_color_default;
         width: 400px;
         height: 400px;
         background: #382785;
         grid-row: 5 / span 5;
         grid-column: 9 /span 3;
         position: relative;
-        color: #000;
+        color: $text_color_default;
         display: block;
     }
 }
@@ -61,8 +61,8 @@
 .rectangle {
     width: 200px;
     height: 0px;
-    border: 10px solid #000;
-    background: #000;
+    border: 10px solid $border_color_default;
+    background: $bgcolor_alt;
     transform: rotate(-50deg);
     margin-top: 175px;
     margin-left: -69px;
@@ -71,8 +71,8 @@
         content: '';
         width: 200px;
         height: 0px;
-        border: 10px solid #000;
-        background: #000;
+        border: 10px solid $border_color_default;
+        background: $bgcolor_alt;
         margin-top: 25px;
         margin-left: -11px;
         z-index: 0;
@@ -83,8 +83,8 @@
         content: '';
         width: 200px;
         height: 0px;
-        border: 10px solid #000;
-        background: #000;
+        border: 10px solid $border_color_default;
+        background: $bgcolor_alt;
         margin-top: 15px;
         margin-left: -10px;
         z-index: 0;

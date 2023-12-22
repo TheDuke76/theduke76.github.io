@@ -409,7 +409,7 @@ body {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: min-content 1fr;
   height: 100vh;
-  background: #ccc;
+  background: #CCC;
 }
 
 header {
@@ -417,6 +417,7 @@ header {
   min-height: 0;
   grid-column: 1/span 12;
   z-index: 1;
+  background: #382785;
 }
 
 main {
@@ -441,9 +442,9 @@ main {
 
 footer {
   margin-top: auto;
-  border: 2px solid black;
   grid-column: 1/span 12;
   z-index: 1;
+  background: #382785;
 }
 
 .background {
