@@ -66,6 +66,8 @@ header {
                 }
 
                 &.col--2 {
+                    display: list-item;
+                    
                     @media screen and (min-width:48em) {
                         display: none;  
                     }                  
