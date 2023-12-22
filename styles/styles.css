@@ -488,6 +488,7 @@ header nav ul li:first-child {
   background: #FFF;
   display: list-item;
   padding-left: 2.8rem;
+  text-align: left;
 }
 @media screen and (min-width: 48em) {
   header nav ul li:first-child {
