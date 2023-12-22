@@ -17,7 +17,10 @@ header {
 
     nav {
         grid-column: 1 / span 7;
-        grid-column: 3 / span 7;
+
+        @media screen and (min-width:48em) {
+            grid-column: 3 / span 7;
+        }        
 
         &, ul {
             display: grid;
