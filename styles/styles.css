@@ -467,6 +467,8 @@ header nav ul li button {
   padding: 2rem;
   background: transparent;
   border: none;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 @media screen and (min-width: 48em) {
   header nav ul li button {
