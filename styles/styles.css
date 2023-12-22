@@ -458,8 +458,13 @@ header nav ul li {
   font-size: 1.8rem;
   display: list-item;
   text-align: center;
+  display: none;
 }
 header nav ul li button {
+  color: #382785;
+  transform: skew(34deg);
+  display: inline-block;
+  padding: 2rem;
   background: transparent;
   border: none;
 }
@@ -468,8 +473,10 @@ header nav ul li button {
     display: none;
   }
 }
-header nav ul li:not(.col--2) {
-  display: none;
+@media screen and (min-width: 48em) {
+  header nav ul li.col--2 {
+    display: none;
+  }
 }
 header nav ul li:hover, header nav ul li:focus, header nav ul li.active, header nav ul li:first-child {
   background: #FFF;
