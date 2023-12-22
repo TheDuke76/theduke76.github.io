@@ -4,13 +4,19 @@ ul {
 .columns {
     columns: 2;
 
-    @media screen and (min-width:530px) and (max-width:699px), 
-    (min-width: 768px) and (max-width:849em) {
+    @media screen and (min-width:530px), 
+    (min-width: 768px), 
+    (min-width: 1280px) {
         columns: 3;
     }
 
-    @media screen and (min-width:700px) and (max-width:767px), 
-    (min-width:850px) {
+    @media screen and (min-width:700px), 
+    (min-width:850px), 
+    (min-width: 1480px) {
         columns: 4;
+    }
+
+    @media screen and (min-width:1000px) {
+        columns: 2;
     }
 }
