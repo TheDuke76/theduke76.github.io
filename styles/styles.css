@@ -454,7 +454,6 @@ header nav ul li {
   font-weight: bold;
   transform: skew(-34deg);
   margin: 0 0 0 0.2rem;
-  text-align: center;
   text-transform: uppercase;
   font-size: 1.8rem;
   display: none;
@@ -470,6 +469,11 @@ header nav ul li:first-child {
 @media screen and (min-width: 48em) {
   header nav ul li:first-child {
     padding-left: 0;
+  }
+}
+@media screen and (min-width: 48em) {
+  header nav ul li {
+    text-align: center;
   }
 }
 header nav ul li a:link, header nav ul li a:visited, header nav ul li a:active {
