@@ -459,13 +459,18 @@ header nav ul li {
   display: list-item;
   text-align: center;
 }
-header nav ul li:not(.col--2) {
-  display: none;
-}
-header nav ul li:not(.col--2) button {
+header nav ul li button {
   transform: skew(34deg);
   background: transparent;
   border: none;
+}
+@media screen and (min-width: 48em) {
+  header nav ul li button {
+    display: none;
+  }
+}
+header nav ul li:not(.col--2) {
+  display: none;
 }
 header nav ul li:hover, header nav ul li:focus, header nav ul li.active, header nav ul li:first-child {
   background: #FFF;
