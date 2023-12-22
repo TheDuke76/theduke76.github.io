@@ -24,7 +24,14 @@ header {
         }
 
         ul {
-            grid-column: 1 / span 7;         
+            grid-column: 1 / span 7;
+            list-style: none;
+            padding: 2rem;
+            margin: 0;
+            
+            li {
+                padding: 2rem;
+            }
         }
     }
 }
