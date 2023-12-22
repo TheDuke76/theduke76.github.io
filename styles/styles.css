@@ -608,7 +608,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 
 h2 {
@@ -630,9 +630,15 @@ h2 span {
 h3 {
   font-size: 2rem;
 }
+h3 + p {
+  font-style: italic;
+  font-size: 1.8rem;
+  margin-top: -10px;
+}
 
 h4 {
   margin: 0;
+  font-size: 1.8rem;
 }
 h4 + p {
   font-style: italic;

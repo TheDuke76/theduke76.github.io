@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 4rem;
+	font-size: 4.5rem;
 }
 
 h2 {
@@ -36,10 +36,17 @@ h2 {
 
 h3 {
 	font-size: 2rem;
+
+	+ p {
+		font-style: italic;
+		font-size: 1.8rem;
+		margin-top: -10px;
+	}
 }
 
 h4 {
 	margin: 0;
+	font-size: 1.8rem;
 
 	+ p {
 		font-style: italic;
