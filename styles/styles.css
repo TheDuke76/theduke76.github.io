@@ -565,6 +565,10 @@ footer {
   display: block;
 }
 
+.columns {
+  columns: 4;
+}
+
 /* Typography */
 html {
   font-size: 62.5%;
