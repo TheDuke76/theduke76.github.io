@@ -67,7 +67,7 @@ header {
 
                 &.col--2 {
                     display: list-item;
-                    
+
                     @media screen and (min-width:48em) {
                         display: none;  
                     }                  
@@ -81,6 +81,7 @@ header {
                     background: $bgcolor_default;
                     display: list-item;
                     padding-left: 2.8rem;
+                    text-align: left;
 
                     @media screen and (min-width:48em) {
                         padding-left: 0;
