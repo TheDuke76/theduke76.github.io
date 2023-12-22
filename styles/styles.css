@@ -460,7 +460,6 @@ header nav ul li {
   text-align: center;
 }
 header nav ul li button {
-  transform: skew(34deg);
   background: transparent;
   border: none;
 }
@@ -486,7 +485,7 @@ header nav ul li:first-child {
     text-align: center;
   }
 }
-header nav ul li a:link, header nav ul li a:visited, header nav ul li a:active {
+header nav ul li a:link, header nav ul li a:visited, header nav ul li a:active, header nav ul li a button {
   color: #382785;
   transform: skew(34deg);
   display: inline-block;

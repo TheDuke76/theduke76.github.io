@@ -52,7 +52,6 @@ header {
                 text-align: center;
 
                 button {
-                    transform: skew(34deg);
                     background: transparent;
                     border: none;
 
@@ -81,7 +80,7 @@ header {
                 }
 
                 a {
-                    &:link, &:visited, &:active  {
+                    &:link, &:visited, &:active, button  {
                         color: #382785;
                         transform: skew(34deg);
                         display: inline-block;
