@@ -565,6 +565,10 @@ footer {
   display: block;
 }
 
+ul {
+  padding-left: 2rem;
+}
+
 .columns {
   columns: 4;
 }
@@ -575,7 +579,7 @@ html {
 }
 
 body {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 } /* =14px */
 /*Addresses `h1` font sizes within `section` and `article` in Firefox 4+, Safari 5, and Chrome. */
 h1, h2, h3, h4, h5, h6 {
