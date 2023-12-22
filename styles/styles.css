@@ -454,12 +454,13 @@ header nav ul li:hover, header nav ul li:focus, header nav ul li.active, header 
 }
 header nav ul li:first-child {
   background: #FFF;
-  padding-left: 3rem;
+  padding-left: 2rem;
+  margin-left: -4rem;
   display: list-item;
 }
 @media screen and (min-width: 48em) {
   header nav ul li:first-child {
-    padding-left: 2rem;
+    padding-left: 0;
   }
 }
 header nav ul li a:link, header nav ul li a:visited, header nav ul li a:active {
