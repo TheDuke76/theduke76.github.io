@@ -16,10 +16,15 @@ header {
     background: #382785;
 
     nav {
+        grid-column: 3 / span 7;
+
         &, ul {
             display: grid;
-            grid-template-columns: subgrid;
-            grid-column: 3 / span 7;
+            grid-template-columns: subgrid;            
+        }
+
+        ul {
+            grid-column: 1 / span 7;         
         }
     }
 }
