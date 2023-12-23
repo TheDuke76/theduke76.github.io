@@ -507,7 +507,7 @@ header nav ul li a:link, header nav ul li a:visited, header nav ul li a:active, 
   color: #382785;
   transform: skew(34deg);
   display: inline-block;
-  padding: 2.5rem;
+  padding: 2rem;
 }
 @media screen and (min-width: 48em) {
   header nav ul li {
