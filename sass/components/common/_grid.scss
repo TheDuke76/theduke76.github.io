@@ -39,7 +39,11 @@ header {
 
             @media screen and (min-width:48em) {
                 margin-left: -4rem;
-            }            
+            }
+            
+            @media screen and (min-width:116.875){
+                grid-template-columns: repeat(7, 16rem);
+            }
             
             li {
                 background: rgba(255, 255, 255, 0.75);

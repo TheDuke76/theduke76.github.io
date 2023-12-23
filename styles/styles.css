@@ -449,6 +449,11 @@ header nav ul {
     margin-left: -4rem;
   }
 }
+@media screen and (min-width: 116.875) {
+  header nav ul {
+    grid-template-columns: repeat(7, 16rem);
+  }
+}
 header nav ul li {
   background: rgba(255, 255, 255, 0.75);
   font-weight: bold;
