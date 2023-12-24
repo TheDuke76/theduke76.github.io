@@ -52,7 +52,6 @@ header {
                 margin: 0 0 0 0.2rem;
                 text-transform: uppercase;
                 font-size: 1.8rem;
-                display: list-item;
                 text-align: center;
                 display:none;
 
@@ -79,12 +78,13 @@ header {
                     }                  
                 }
 
-                &:hover, &:focus, &.active, &:first-child {
-                    background: $bgcolor_default;
+                a {
+                    &:hover, &:focus, &.active {
+                        background: $bgcolor_default;
+                    }
                 }
 
                 &:first-child {
-                    background: $bgcolor_default;
                     display: list-item;
                     padding-left: 2.8rem;
                     text-align: left;
@@ -97,10 +97,12 @@ header {
 
                 a {
                     &:link, &:visited, &:active, button  {
-                        color: #382785;
-                        transform: skew(34deg);
-                        display: inline-block;
-                        padding: 2rem;
+                        span {
+                            color: #382785;
+                            transform: skew(34deg);
+                            display: inline-block;
+                            padding: 2rem;
+                        }                        
                     }
                 }
 

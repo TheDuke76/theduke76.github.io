@@ -1,5 +1,5 @@
 a[href^="http"], a[href^="https://"] {
-    &::after {
+    span::after {
         content: "";
         width: 20px;
         height: 20px;
