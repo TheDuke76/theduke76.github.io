@@ -1,3 +1,12 @@
+:not(header) a {
+    color: #382785;
+    text-decoration: underline;
+
+    &:hover, &:focus {
+        text-decoration: none;
+    }
+}
+
 ul {
     padding-left: 2rem;
 }
