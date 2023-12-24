@@ -480,6 +480,7 @@ header nav ul li button:hover, header nav ul li button:focus {
 }
 header nav ul li button span {
   transform: skew(34deg);
+  display: inline-block;
 }
 @media screen and (min-width: 48em) {
   header nav ul li button {
