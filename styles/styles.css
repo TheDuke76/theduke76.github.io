@@ -787,7 +787,7 @@ a[href^=http]::after, a[href^="https://"]::after {
   box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
   position: relative;
 }
-.photo-gallery li:hover p {
+.photo-gallery li a:hover p, .photo-gallery li a:focus p {
   color: #000;
   padding: 1rem 1rem 10rem;
   border-top: 1px solid #000;
