@@ -95,14 +95,14 @@ header {
 
                 &:first-child {
                     display: list-item;
-                    padding-left: 2.8rem;
                     text-align: left;
 
                     a {
                         margin-left: -20px;
                         padding-left: 20px;
-                        
+
                         @media screen and (min-width:48em) {
+                            margin-left: 0;
                             padding-left: 0;
                             text-align: center;
                         }
