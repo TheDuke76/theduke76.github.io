@@ -907,16 +907,16 @@ a[href^=http]::after, a[href^="https://"]::after {
 .photo-gallery li:hover p {
   color: #000;
   padding: 1rem 1rem 10rem;
+  border-top: 1px solid #000;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .photo-gallery li p {
   padding: 0;
   margin: 0;
-  border-top: 1px solid #000;
   position: absolute;
   z-index: 2;
   bottom: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
   color: transparent;
   transition: all 0.1s linear;
 }
