@@ -905,7 +905,7 @@ a[href^=http]::after, a[href^="https://"]::after {
   position: relative;
 }
 .photo-gallery li:hover p {
-  visibility: visible;
+  color: #000;
 }
 .photo-gallery li p {
   padding: 1rem 1rem 10rem;
@@ -916,7 +916,7 @@ a[href^=http]::after, a[href^="https://"]::after {
   bottom: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
-  visibility: hidden;
+  color: transparent;
   transition: all 0.1s linear;
 }
 
