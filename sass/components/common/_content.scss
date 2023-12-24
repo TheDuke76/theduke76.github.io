@@ -1,4 +1,4 @@
-:not(header) a {
+a, a:visited {
     color: #382785;
     text-decoration: underline;
 
@@ -12,6 +12,8 @@ ul {
 }
 
 .content {
+    transition: all .1s linear;
+    
     @media screen and (min-width: 62.5em) {
         padding-right: 50%;
     }

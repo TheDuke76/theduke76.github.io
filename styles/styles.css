@@ -804,11 +804,11 @@ header nav ul li a span, header nav ul li a:visited span, header nav ul li a:act
   display: block;
 }
 
-:not(header) a {
+a, a:visited {
   color: #382785;
   text-decoration: underline;
 }
-:not(header) a:hover, :not(header) a:focus {
+a:hover, a:focus, a:visited:hover, a:visited:focus {
   text-decoration: none;
 }
 
@@ -816,6 +816,9 @@ ul {
   padding-left: 2rem;
 }
 
+.content {
+  transition: all 0.1s linear;
+}
 @media screen and (min-width: 62.5em) {
   .content {
     padding-right: 50%;
@@ -904,8 +907,11 @@ a[href^=http]::after, a[href^="https://"]::after {
   box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
   position: relative;
 }
+.photo-gallery li:hover p {
+  display: block;
+}
 .photo-gallery li p {
-  padding: 1rem;
+  padding: 1rem 1rem 10rem;
   margin: 0;
   border-top: 1px solid #000;
   position: absolute;
@@ -913,6 +919,7 @@ a[href^=http]::after, a[href^="https://"]::after {
   bottom: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
+  display: none;
 }
 
 /* Typography */
