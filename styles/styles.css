@@ -788,10 +788,10 @@ a[href^=http]::after, a[href^="https://"]::after {
   position: relative;
 }
 .photo-gallery li a:hover p, .photo-gallery li a:focus p {
-  color: #000;
+  color: #FFF;
   padding: 1rem 1rem 10rem;
   border-top: 1px solid #000;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .photo-gallery li p {
   padding: 0;
