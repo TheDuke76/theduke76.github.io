@@ -57,16 +57,21 @@ header {
 
                 button {
                     color: #382785;
-                    transform: skew(34deg);
                     display: inline-block;
                     padding: 2rem;
                     background: transparent;
                     border: none;
                     font-size: 1.8rem;
                     font-weight: bold;
+                    width: 100%;
+                    height: 100%;
 
                     &:hover, &:focus {
                         background: #FFF;
+                    }
+
+                    span {                        
+                        transform: skew(34deg);
                     }
 
                     @media screen and (min-width: 48em) {
@@ -93,10 +98,16 @@ header {
                     padding-left: 2.8rem;
                     text-align: left;
 
-                    @media screen and (min-width:48em) {
-                        padding-left: 0;
-                        text-align: center;
+                    a {
+                        @media screen and (min-width:48em) {
+                            padding-left: 0;
+                            text-align: center;
+                            margin-left: -20px;
+                            padding-left: 20px;
+                        }
                     }
+
+                    
                 }
 
                 a {
