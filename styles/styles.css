@@ -511,6 +511,9 @@ header nav ul li:first-child a {
     padding-left: 0;
     text-align: center;
   }
+  header nav ul li:first-child a span {
+    padding-left: 50px;
+  }
 }
 header nav ul li a:link, header nav ul li a:visited, header nav ul li a:active, header nav ul li a button {
   width: 100%;
