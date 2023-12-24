@@ -474,6 +474,9 @@ header nav ul li button {
   font-size: 1.8rem;
   font-weight: bold;
 }
+header nav ul li button:hover, header nav ul li button:focus {
+  background: #FFF;
+}
 @media screen and (min-width: 48em) {
   header nav ul li button {
     display: none;
