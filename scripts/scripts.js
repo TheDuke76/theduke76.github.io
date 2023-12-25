@@ -13,7 +13,7 @@
     modal.style.display = 'flex'; // or 'block' for display: block;
     const img = this.parentNode.previousElementSibling.src;
     let largeImage = img.lastIndexOf('/');
-    let laregImage = "media/images/hirez/" + img.substring(largeImage + 1);
+    largeImage = "/media/images/hirez/" + img.substring(largeImage + 1);
     document.getElementById('modal-image').src = this.parentNode.previousElementSibling.laregImage;
   }
 
