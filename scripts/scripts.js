@@ -12,11 +12,13 @@
     const modal = document.getElementById('myModal');
     modal.style.display = 'flex'; // or 'block' for display: block;
     const img = this.parentNode.previousElementSibling.src;
+
+
     let largeImage = img.lastIndexOf('/');
-    console.log(largeImage);
-    largeImage = "/media/images/hirez/" + largeImage.substring(largeImage + 1);
-    console.log('now large image is ' + largeImage);
-    document.getElementById('modal-image').src = this.parentNode.previousElementSibling.laregImage;
+    console.log("substring is " + largeImage);
+   // largeImage = "/media/images/hirez/" + largeImage.substring(largeImage + 1);
+  //  console.log('now large image is ' + largeImage);
+   // document.getElementById('modal-image').src = this.parentNode.previousElementSibling.laregImage;
   }
 
   // Function to close the modal
