@@ -7,10 +7,12 @@ header {
     background: #382785;
     height: 6.1rem;
     z-index: 2;
+    width: 100%;
 
     @media screen and (min-width: 48em) {
         display: grid;
         position: relative;
+        width: auto;
         z-index: 1;
     }
 
