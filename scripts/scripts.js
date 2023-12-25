@@ -18,7 +18,7 @@
     console.log("substring is " + largeImage);
    // largeImage = "/media/images/hirez/" + largeImage.substring(largeImage + 1);
   //  console.log('now large image is ' + largeImage);
-   // document.getElementById('modal-image').src = this.parentNode.previousElementSibling.laregImage;
+    document.getElementById('modal-image').src = this.parentNode.previousElementSibling.src;
   }
 
   // Function to close the modal
