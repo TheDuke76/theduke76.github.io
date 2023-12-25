@@ -447,6 +447,7 @@ main {
   main {
     background: #FFF;
     margin-top: 0;
+    max-width: 100%;
   }
 }
 
