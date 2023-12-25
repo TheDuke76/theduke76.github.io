@@ -4,12 +4,13 @@ header {
     grid-row: 1;
     min-height: 0;
     grid-column: 1 / span 12;
-    z-index: 1;
     background: #382785;
-    position: absolute;
+    height: 6.1rem;
+    z-index: 2;
 
     @media screen and (min-width: 48em) {
         position: relative;
+        z-index: 1;
     }
 
     nav {
@@ -31,8 +32,10 @@ header {
         ul {
             grid-column: 1 / span 7;
             list-style: none;
-            margin: 0;
             margin: 0 -2rem 0px -5rem;
+            position: absolute;
+            width: 110%;
+            z-index: 1;
 
             @media screen and (min-width:48em) {
                 margin-left: -4rem;
@@ -81,14 +84,24 @@ header {
                     display: list-item;
 
                     &.open {
-                        + li {
+                        ~ li {
                             transform: skew(0deg);
                             border-left: 1px solid #382785;
                             border-bottom: 1px solid #ccc;
+                            display: block;
+                            background: #382785;
+                            margin-right: 3rem;
+                            margin-left: -2rem;
 
                             &:last-child {
                                 border-bottom: 1px solid #382785;
                             }
+
+                            a {
+                                &:hover, &:focus {
+                                    background: #FFF;
+                                }
+                            }                            
 
                             span {
                                 transform: skew(0deg);
