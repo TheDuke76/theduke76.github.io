@@ -152,13 +152,13 @@ header {
                 }
 
                 a {
-                    &:hover, &:focus, &.active {
+                    &:hover, &:focus {
                         background: $bgcolor_default;
                     }
                 }                
 
                 a {
-                    &, &:visited, &:active, button  {
+                    &, &:visited, button  {
                         width: 100%;
                         height: 100%;
                         display: block;
