@@ -118,6 +118,10 @@ img {
 
 p { 
 	margin:0 0 1em 0;
+
+	@media print {
+		color: #000;
+	}
 }
 
 .ir { 
