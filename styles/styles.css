@@ -787,16 +787,16 @@ a[href^=http]::after, a[href^="https://"]::after {
   box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
   position: relative;
 }
-.photo-gallery li a + button {
+.photo-gallery li + button {
   display: none;
 }
-.photo-gallery li a:hover p, .photo-gallery li a:focus p {
+.photo-gallery li:hover p, .photo-gallery li:focus-within p {
   color: #FFF;
   padding: 1rem 1rem 10rem;
   border-top: 1px solid #000;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.photo-gallery li a:hover + button, .photo-gallery li a:focus + button {
+.photo-gallery li:hover + button, .photo-gallery li:focus-within + button {
   display: block;
 }
 .photo-gallery li p {

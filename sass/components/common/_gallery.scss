@@ -13,22 +13,20 @@
         box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
         position: relative;
 
-        a {
-            + button {
-                display: none;
+        + button {
+            display: none;
+        }
+
+        &:hover, &:focus-within {
+            p {
+                color: #FFF;
+                padding: 1rem 1rem 10rem;
+                border-top: 1px solid #000;
+                background-color: rgba(0,0,0,0.5);
             }
 
-            &:hover, &:focus {
-                p {
-                    color: #FFF;
-                    padding: 1rem 1rem 10rem;
-                    border-top: 1px solid #000;
-                    background-color: rgba(0,0,0,0.5);
-                }
-
-                + button {
-                    display: block;
-                }
+            + button {
+                display: block;
             }
         } 
 
