@@ -877,6 +877,12 @@ a[href^=http]::after, a[href^="https://"]::after {
   color: transparent;
   transition: all 0.1s linear;
 }
+@media print {
+  .photo-gallery li div {
+    position: static;
+    padding: 1rem;
+  }
+}
 .photo-gallery li div button {
   opacity: 0;
   margin: 1rem auto;
@@ -893,6 +899,11 @@ a[href^=http]::after, a[href^="https://"]::after {
 }
 .photo-gallery li div button:active {
   box-shadow: inset 0px -1px 10px 2px rgba(0, 0, 0, 0.75);
+}
+@media print {
+  .photo-gallery li div button {
+    display: none;
+  }
 }
 
 /* Typography */
