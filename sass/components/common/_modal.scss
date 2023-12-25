@@ -9,6 +9,7 @@
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
     justify-content: center;
     align-items: center;
+    z-index: 1;
 
     &-content { /* Style for the modal content */
         background-color: #fff;
