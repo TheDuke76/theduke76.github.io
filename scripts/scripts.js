@@ -20,8 +20,10 @@
   }
 
   // Open modal when the button is clicked
-  const openModalButton = document.querySelectorAll('.js-open-modal');
-  openModalButton.addEventListener('click', openModal);
+  const openModalButtons = document.querySelectorAll('.js-open-modal');
+  openModalButtons.forEach(function(element) {
+    element.addEventListener('click', openModal);
+  });
 
   // Close modal when the close button is clicked
   const closeModalButton = document.getElementById('closeModalButton');
