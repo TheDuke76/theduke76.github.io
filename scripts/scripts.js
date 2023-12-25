@@ -15,7 +15,7 @@
 
 
     let largeImage = img.lastIndexOf('/');
-    console.log("substring is " + largeImage);
+    console.log("substring is " + imge);
    // largeImage = "/media/images/hirez/" + largeImage.substring(largeImage + 1);
   //  console.log('now large image is ' + largeImage);
     document.getElementById('modal-image').src = this.parentNode.previousElementSibling.src;
