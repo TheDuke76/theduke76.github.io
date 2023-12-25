@@ -799,7 +799,7 @@ a[href^=http]::after, a[href^="https://"]::after {
 .photo-gallery li:hover + button, .photo-gallery li:focus-within + button {
   display: block;
 }
-.photo-gallery li p {
+.photo-gallery li div {
   padding: 0;
   margin: 0;
   position: absolute;
