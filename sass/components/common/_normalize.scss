@@ -260,6 +260,10 @@ p {
 /* ## Base List styles ## */
 ul, ol { 
 	margin:0 0 1em;
+
+	@media print {
+		margin: 0 0 .5em;
+	}
 }
 
 .noBullet { 

@@ -37,11 +37,17 @@ h2 {
 		color: #000;
 		background: #FFF;
 		margin-bottom: 0;
+		box-shadow: none;
+		transform: none;
 	}
 
 	span {
 		transform: skew(34deg);
 		display: inline-block;
+
+		@media print {
+			transform: none;
+		}
 	}
 }
 
