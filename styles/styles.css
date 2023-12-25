@@ -542,6 +542,7 @@ header nav ul li button {
   font-weight: bold;
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 header nav ul li button:hover, header nav ul li button:focus {
   background: #FFF;
@@ -589,7 +590,7 @@ header nav ul li.col--2.open + .col--3 {
     display: none;
   }
 }
-header nav ul li a:hover, header nav ul li a:focus {
+header nav ul li a:hover, header nav ul li a:focus, header nav ul li a.active {
   background: #FFF;
 }
 header nav ul li a, header nav ul li a:visited, header nav ul li a button {
