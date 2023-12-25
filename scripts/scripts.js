@@ -12,7 +12,7 @@
     const modal = document.getElementById('myModal');
     modal.style.display = 'flex'; // or 'block' for display: block;
     const parentElement = this.parentNode;
-    const imgElement = parentNode.querySelector('img');
+    const imgElement = this.parentNode.querySelector('img');
     console.log('Image source:', imgSrc);
     document.getElementById('modal-image').src = imgSrc;
   }
