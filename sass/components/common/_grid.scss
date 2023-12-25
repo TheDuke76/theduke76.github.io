@@ -18,6 +18,7 @@ main {
 
     @media screen and (min-width: 48em) {
         grid-column: 3 / span 7;
+        margin-top: 0;
     }
 
     @media screen and (min-width: 62.5em) {
