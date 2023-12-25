@@ -789,7 +789,7 @@ a[href^=http]::after, a[href^="https://"]::after {
 }
 .photo-gallery li:hover div, .photo-gallery li:focus-within div {
   color: #FFF;
-  padding: 1rem 1rem 10rem;
+  padding: 1rem;
   border-top: 1px solid #000;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -818,6 +818,7 @@ a[href^=http]::after, a[href^="https://"]::after {
   font-weight: 800;
   color: #382785;
   cursor: pointer;
+  outline: none;
 }
 
 /* Typography */

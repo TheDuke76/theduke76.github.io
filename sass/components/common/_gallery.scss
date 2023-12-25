@@ -16,7 +16,7 @@
         &:hover, &:focus-within {
             div {
                 color: #FFF;
-                padding: 1rem 1rem 10rem;
+                padding: 1rem;
                 border-top: 1px solid #000;
                 background-color: rgba(0,0,0,0.5);
 
@@ -48,6 +48,7 @@
                 font-weight: 800;
                 color: #382785;
                 cursor: pointer;
+                outline: none;
             }
         }
     }
