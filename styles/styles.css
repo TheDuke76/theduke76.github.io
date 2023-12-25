@@ -787,17 +787,14 @@ a[href^=http]::after, a[href^="https://"]::after {
   box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
   position: relative;
 }
-.photo-gallery li + button {
-  display: none;
-}
 .photo-gallery li:hover div, .photo-gallery li:focus-within div {
   color: #FFF;
   padding: 1rem 1rem 10rem;
   border-top: 1px solid #000;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.photo-gallery li:hover + button, .photo-gallery li:focus-within + button {
-  display: block;
+.photo-gallery li:hover div button, .photo-gallery li:focus-within div button {
+  opacity: 1;
 }
 .photo-gallery li div {
   padding: 0;
@@ -808,6 +805,19 @@ a[href^=http]::after, a[href^="https://"]::after {
   width: 100%;
   color: transparent;
   transition: all 0.1s linear;
+}
+.photo-gallery li div button {
+  opacity: 0;
+  margin: 1rem auto;
+  text-align: center;
+  display: block;
+  border: 1px solid #000;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #382785;
+  cursor: pointer;
 }
 
 /* Typography */
