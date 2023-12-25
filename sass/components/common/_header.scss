@@ -1,5 +1,5 @@
 header {
-    display: grid;
+    position: fixed;    
     grid-template-columns: subgrid;
     grid-row: 1;
     min-height: 0;
@@ -9,14 +9,17 @@ header {
     z-index: 2;
 
     @media screen and (min-width: 48em) {
+        display: grid;
         position: relative;
         z-index: 1;
     }
 
     nav {
         grid-column: 1 / span 12;
+        width: 100%;
 
         @media screen and (min-width:48em) {
+            width: auto;
             grid-column: 3 / span 7;
         }        
 
@@ -34,7 +37,7 @@ header {
             list-style: none;
             margin: 0 -2rem 0px -5rem;
             position: absolute;
-            width: 110%;
+            width: 113%;
             z-index: 1;
 
             @media screen and (min-width:48em) {
@@ -54,6 +57,30 @@ header {
                 font-size: 1.8rem;
                 text-align: center;
                 display:none;
+
+                &:first-child {
+                    display: list-item;
+                    text-align: left;
+                    border-bottom: 2px solid #382785;
+
+                    @media screen and (min-width: 48em) {
+                        border-bottom: 0;
+                    }
+
+                    a {
+                        span {
+                            padding-left: 5rem;
+
+                            @media screen and (min-width:48em) {
+                                padding-left: 2rem;
+                            }
+                        }
+
+                        @media screen and (min-width:48em) {
+                            text-align: center;                            
+                        }
+                    }                    
+                }
 
                 button {
                     color: #382785;
@@ -82,16 +109,21 @@ header {
 
                 &.col--2 {
                     display: list-item;
+                    border-bottom: 2px solid #382785;
+
+                    @media screen and (min-width: 48em) {
+                        border-bottom: 0;
+                    }
 
                     &.open {
                         ~ li {
                             transform: skew(0deg);
                             border-left: 2px solid #382785;
-                            border-bottom: 2px solid #ccc;
+                            border-bottom: 2px solid #382785;
                             display: block;
                             background: #382785;
-                            margin-right: 3rem;
-                            margin-left: -2rem;
+                            margin-left: -1.9rem;
+                            width: 100%;
 
                             &:last-child {
                                 border-bottom: 1px solid #382785;
@@ -120,26 +152,7 @@ header {
                     &:hover, &:focus, &.active {
                         background: $bgcolor_default;
                     }
-                }
-
-                &:first-child {
-                    display: list-item;
-                    text-align: left;
-
-                    a {
-                        span {
-                            padding-left: 5rem;
-
-                            @media screen and (min-width:48em) {
-                                padding-left: 2rem;
-                            }
-                        }
-
-                        @media screen and (min-width:48em) {
-                            text-align: center;                            
-                        }
-                    }                    
-                }
+                }                
 
                 a {
                     &, &:visited, &:active, button  {
