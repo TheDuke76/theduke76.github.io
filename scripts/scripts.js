@@ -11,7 +11,7 @@
   function openModal() {
     const modal = document.getElementById('myModal');
     modal.style.display = 'flex'; // or 'block' for display: block;
-    const img = this.parentNode.previousElementSibling.src;
+    let img = this.parentNode.previousElementSibling.src;
     console.log('img is ' + img);
     img = img.replace('/images/, /images/hirez/');
     console.log('img is now ' + img);
