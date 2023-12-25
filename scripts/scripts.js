@@ -11,7 +11,10 @@
   function openModal() {
     const modal = document.getElementById('myModal');
     modal.style.display = 'flex'; // or 'block' for display: block;
-    document.getElementById('modal-image').src = this.parentElement.previousSibling('img').src;
+    const parentElement = this.parentNode;
+    const imgElement = parentNode.querySelector('img');
+    console.log('Image source:', imgSrc);
+    document.getElementById('modal-image').src = imgSrc;
   }
 
   // Function to close the modal
