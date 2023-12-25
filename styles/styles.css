@@ -411,6 +411,11 @@ body {
   height: 100vh;
   background: #CCC;
 }
+@media print {
+  body {
+    height: auto;
+  }
+}
 
 main {
   grid-column: 1/span 12;
@@ -460,6 +465,11 @@ header {
     width: auto;
     border-bottom: 0;
     z-index: 1;
+  }
+}
+@media print {
+  header {
+    display: none;
   }
 }
 header nav {
@@ -890,6 +900,12 @@ h2 {
   margin-right: -38px;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
   transform: skew(-34deg);
+}
+@media print {
+  h2 {
+    box-shadow: none;
+    color: #000;
+  }
 }
 h2 span {
   transform: skew(34deg);

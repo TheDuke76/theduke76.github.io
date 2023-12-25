@@ -18,6 +18,10 @@ header {
         z-index: 1;
     }
 
+    @media print {
+        display: none;
+    }
+
     nav {
         grid-column: 1 / span 12;
         width: 100%;
@@ -98,7 +102,7 @@ header {
                     height: 100%;
                     cursor: pointer;
                     text-transform: uppercase;
-                    
+
                     &:hover, &:focus {
                         background: #FFF;
                     }
