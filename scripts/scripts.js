@@ -14,7 +14,7 @@
     const img = this.parentNode.previousElementSibling.src;
     const newImage =img.replace('/images/', '/images/hirez/');
     console.log(newImage);
-    document.getElementById('modal-image').src = this.parentNode.previousElementSibling.newImage;
+    document.getElementById('modal-image').src = newImage;
   }
 
   // Function to close the modal
