@@ -911,6 +911,12 @@ a[href^=http]::after, a[href^="https://"]::after {
   }
 }
 
+@media print {
+  .no-print {
+    display: none;
+  }
+}
+
 /* Typography */
 html {
   font-size: 62.5%;
