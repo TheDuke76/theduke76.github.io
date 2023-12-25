@@ -6,6 +6,11 @@ header {
     grid-column: 1 / span 12;
     z-index: 1;
     background: #382785;
+    position: absolute;
+
+    @media screen and (min-width: 48em) {
+        position: relative;
+    }
 
     nav {
         grid-column: 1 / span 12;
@@ -75,6 +80,22 @@ header {
                 &.col--2 {
                     display: list-item;
 
+                    &.open {
+                        + li {
+                            transform: skew(0deg);
+                            border-left: 1px solid #382785;
+                            border-bottom: 1px solid #ccc;
+
+                            &:last-child {
+                                border-bottom: 1px solid #382785;
+                            }
+
+                            span {
+                                transform: skew(0deg);
+                            }
+                        }
+                    }
+
                     @media screen and (min-width:48em) {
                         display: none;  
                     }                  
@@ -124,6 +145,34 @@ header {
                     display: list-item;
                 }
             }
+        }
+    }
+}
+
+.col {
+    &--1 {
+        grid-column: 1;
+    }
+
+    &--2, &--3, &--4, &--5, &--6, &--7 {
+        grid-column: 2;
+    }
+    
+    @media screen and (min-width: 48em) {
+        &--3 {
+            grid-column: 3;
+        }
+        &--4 {
+            grid-column: 4;
+        }
+        &--5 {
+            grid-column: 5;
+        }
+        &--6 {
+            grid-column: 6;
+        }
+        &--7 {
+            grid-column: 7;
         }
     }
 }
