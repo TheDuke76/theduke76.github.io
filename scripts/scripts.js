@@ -12,8 +12,9 @@
     const modal = document.getElementById('myModal');
     modal.style.display = 'flex'; // or 'block' for display: block;
     const img = this.parentNode.previousElementSibling.src;
-    img.replace('images/, images/hirez/');
-    
+    console.log('img is ' + img);
+    img.replace('/images/, /images/hirez/');
+    console.log('img is now ' + img);
    // largeImage = "/media/images/hirez/" + largeImage.substring(largeImage + 1);
   //  console.log('now large image is ' + largeImage);
     document.getElementById('modal-image').src = this.parentNode.previousElementSibling.img;
