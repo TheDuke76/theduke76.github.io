@@ -899,6 +899,11 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: clamp(3.38rem, -0.764rem + 12.4444vw, 4.5rem);
 }
+@media print {
+  h1 {
+    margin-bottom: 0;
+  }
+}
 
 h2 {
   background: #382785;
@@ -915,6 +920,8 @@ h2 {
   h2 {
     box-shadow: none;
     color: #000;
+    background: #FFF;
+    margin-bottom: 0;
   }
 }
 h2 span {
@@ -929,6 +936,11 @@ h3 + p {
   font-style: italic;
   font-size: 1.8rem;
   margin: -1rem 0 1rem;
+}
+@media print {
+  h3 + p {
+    margin-bottom: 0.5rem;
+  }
 }
 
 h4 {
