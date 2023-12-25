@@ -14,7 +14,7 @@
     const img = this.parentNode.previousElementSibling.src;
     let largeImage = img.lastIndexOf('/');
     let laregImage = "media/images/hirez/" + img.substring(largeImage + 1);
-    document.getElementById('modal-image').src = this.parentNode.previousElementSibling.src;
+    document.getElementById('modal-image').src = this.parentNode.previousElementSibling.laregImage;
   }
 
   // Function to close the modal
