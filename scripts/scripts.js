@@ -5,3 +5,32 @@
       this.parentNode.classList.toggle('open');
     })
   });
+
+
+  // Function to open the modal
+  function openModal() {
+    const modal = document.getElementById('myModal');
+    modal.style.display = 'flex'; // or 'block' for display: block;
+  }
+
+  // Function to close the modal
+  function closeModal() {
+    const modal = document.getElementById('myModal');
+    modal.style.display = 'none';
+  }
+
+  // Open modal when the button is clicked
+  const openModalButton = document.getElementsByClassName('js-open-modal');
+  openModalButton.addEventListener('click', openModal);
+
+  // Close modal when the close button is clicked
+  const closeModalButton = document.getElementById('closeModalButton');
+  closeModalButton.addEventListener('click', closeModal);
+
+  // Close modal if overlay is clicked
+  window.addEventListener('click', function(event) {
+    const modal = document.getElementById('myModal');
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
