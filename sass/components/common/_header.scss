@@ -86,8 +86,8 @@ header {
                     &.open {
                         ~ li {
                             transform: skew(0deg);
-                            border-left: 1px solid #382785;
-                            border-bottom: 1px solid #ccc;
+                            border-left: 2px solid #382785;
+                            border-bottom: 2px solid #ccc;
                             display: block;
                             background: #382785;
                             margin-right: 3rem;
@@ -98,6 +98,8 @@ header {
                             }
 
                             a {
+                                background: rgba(255, 255, 255, 0.75);
+
                                 &:hover, &:focus {
                                     background: #FFF;
                                 }
