@@ -35,4 +35,8 @@ footer {
     grid-column: 1 / span 12;
     z-index: 1;
     background: #382785;
+
+    @media print {
+        display: none;
+    }
 }

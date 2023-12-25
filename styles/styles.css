@@ -445,6 +445,11 @@ footer {
   z-index: 1;
   background: #382785;
 }
+@media print {
+  footer {
+    display: none;
+  }
+}
 
 header {
   position: fixed;
@@ -653,6 +658,11 @@ header nav ul li a span, header nav ul li a:visited span, header nav ul li a but
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
+}
+@media print {
+  .background {
+    display: none;
+  }
 }
 .background span {
   grid-row: 8;

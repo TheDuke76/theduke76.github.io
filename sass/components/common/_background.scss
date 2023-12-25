@@ -7,6 +7,10 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
 
+    @media print {
+        display: none;
+    }
+
     span {
         grid-row: 8;
         grid-column: 11;
