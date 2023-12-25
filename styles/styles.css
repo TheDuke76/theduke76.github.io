@@ -820,6 +820,9 @@ a[href^=http]::after, a[href^="https://"]::after {
   cursor: pointer;
   outline: none;
 }
+.photo-gallery li div button:active {
+  box-shadow: inset 0px -1px 10px 2px rgba(0, 0, 0, 0.75);
+}
 
 /* Typography */
 html {
