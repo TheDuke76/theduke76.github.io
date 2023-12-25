@@ -928,6 +928,7 @@ a[href^=http]::after, a[href^="https://"]::after {
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
+  max-width: 58%;
 }
 
 @media print {
