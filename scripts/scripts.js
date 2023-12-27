@@ -15,14 +15,17 @@
     const title = this.previousElementSibling;
     const modalTitle = title ? title.textContent.trim() : null;
     const newImage =img.replace('/images/', '/images/hirez/');
+    const newTitle = document.createTextNode(modalTitle);
     document.getElementById('modal-image').src = newImage;
-    document.getElementById('modal-title').innerHTML(modalTitle);
+    document.getElementById('modal-title').appendChild(newTitle);
   }
 
   // Function to close the modal
   function closeModal() {
     const modal = document.getElementById('myModal');
+    const modalTitle = document.getElementById('modal-title');
     modal.style.display = 'none';
+    modalTitle.textContent = '';
   }
 
   // Open modal when the button is clicked
