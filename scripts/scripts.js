@@ -12,9 +12,11 @@
     const modal = document.getElementById('myModal');
     modal.style.display = 'flex'; // or 'block' for display: block;
     const img = this.parentNode.previousElementSibling.src;
+    const title = this.previousElementSibling;
+    const modalTitle = title ? title.textContent.trim() : null;
     const newImage =img.replace('/images/', '/images/hirez/');
-    console.log(newImage);
     document.getElementById('modal-image').src = newImage;
+    document.getElementById('modal-title').textContent(newTitle);
   }
 
   // Function to close the modal

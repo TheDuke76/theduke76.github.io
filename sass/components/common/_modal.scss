@@ -11,10 +11,16 @@
     align-items: center;
     z-index: 1;
 
+    &-wrapper {
+        position: relative;
+    }
+
     &-content { /* Style for the modal content */
         background-color: #fff;
         padding: 20px;
         border-radius: 5px;
-        max-width: 58%;
+        max-width: 50%;
+        max-height: 90%;
+        overflow-y: auto;
       }
  }
