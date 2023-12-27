@@ -10,7 +10,7 @@
   // Function to open the modal
   function openModal() {
     const modal = document.getElementById('myModal');
-    this.parentNode.classList.toggle('open'); // or 'block' for display: block;
+    modal.classList.toggle('open'); // or 'block' for display: block;
     const img = this.parentNode.previousElementSibling.src;
     const title = this.previousElementSibling;
     const modalTitle = title ? title.textContent.trim() : null;
@@ -24,7 +24,7 @@
   function closeModal() {
     const modal = document.getElementById('myModal');
     const modalTitle = document.getElementById('modal-title');
-    this.parentNode.classList.toggle('open');
+    modal.classList.toggle('open');
     modalTitle.textContent = '';
   }
 
