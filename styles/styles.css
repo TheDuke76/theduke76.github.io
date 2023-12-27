@@ -995,7 +995,7 @@ a[href^=http]::after, a[href^="https://"]::after {
     height: 35px;
     padding: 0;
   }
-  .modal-close-button.visually-hidden {
+  .modal-close-button .visually-hidden {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -1005,7 +1005,7 @@ a[href^=http]::after, a[href^="https://"]::after {
     position: absolute;
     width: 1px;
   }
-  .modal-close-button.visually-hidden.focusable:active, .modal-close-button.visually-hidden.focusable:focus {
+  .modal-close-button .visually-hidden.focusable:active, .modal-close-button .visually-hidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
