@@ -935,6 +935,21 @@ a[href^=http]::after, a[href^="https://"]::after {
 .modal-content { /* Style for the modal content */
   overflow-y: auto;
 }
+.modal-close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: -10px;
+  margin-right: -10px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+.modal-close-button::before {
+  content: "❌";
+  display: block;
+  color: #000;
+  filter: brightness(0);
+}
 
 @media print {
   .no-print {
