@@ -16,7 +16,7 @@
     const modalTitle = title ? title.textContent.trim() : null;
     const newImage =img.replace('/images/', '/images/hirez/');
     document.getElementById('modal-image').src = newImage;
-    document.getElementById('modal-title').textContent(newTitle);
+    document.getElementById('modal-title').textContent(modalTitle);
   }
 
   // Function to close the modal

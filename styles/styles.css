@@ -924,11 +924,16 @@ a[href^=http]::after, a[href^="https://"]::after {
   align-items: center;
   z-index: 1;
 }
-.modal-content { /* Style for the modal content */
+.modal-wrapper {
+  position: relative;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
-  max-width: 58%;
+  max-width: 50%;
+  max-height: 90%;
+}
+.modal-content { /* Style for the modal content */
+  overflow-y: auto;
 }
 
 @media print {
