@@ -940,6 +940,14 @@ a[href^=http]::after, a[href^="https://"]::after {
     display: flex;
   }
 }
+.modal-title {
+  max-width: 75%;
+}
+@media screen and (min-width: 48em) {
+  .modal-title {
+    max-width: initial;
+  }
+}
 .modal-wrapper {
   position: relative;
   background-color: #fff;
