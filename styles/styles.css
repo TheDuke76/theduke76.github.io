@@ -924,7 +924,7 @@ a[href^=http]::after, a[href^="https://"]::after {
   z-index: 1;
   padding: 0;
 }
-@media screen and (min-width: 48em), (min-height: 750px) {
+@media screen and (min-width: 48em), (min-width: 100%) and (min-height: 750px) {
   .modal {
     top: 0;
     left: 0;
@@ -935,7 +935,7 @@ a[href^=http]::after, a[href^="https://"]::after {
 .modal.open {
   display: block;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 48em), (min-width: 100%) and (min-height: 750px) {
   .modal.open {
     display: flex;
   }
@@ -943,7 +943,7 @@ a[href^=http]::after, a[href^="https://"]::after {
 .modal-title {
   max-width: 75%;
 }
-@media screen and (min-width: 48em), (min-height: 750px) {
+@media screen and (min-width: 48em), (min-width: 100%) and (min-height: 750px) {
   .modal-title {
     max-width: initial;
   }
@@ -956,7 +956,7 @@ a[href^=http]::after, a[href^="https://"]::after {
   height: 100%;
   transition: all 0.1s linear;
 }
-@media screen and (min-width: 48em), (min-height: 750px) {
+@media screen and (min-width: 48em), (min-width: 100%) and (min-height: 750px) {
   .modal-wrapper {
     padding: 20px;
     max-width: 80%;
@@ -985,7 +985,7 @@ a[href^=http]::after, a[href^="https://"]::after {
   text-transform: uppercase;
   padding: 10px;
 }
-@media screen and (min-width: 48em), (min-height: 750px) {
+@media screen and (min-width: 48em), (min-width: 100%) and (min-height: 750px) {
   .modal-close-button {
     top: 0;
     right: 0;
