@@ -2,7 +2,6 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: min-content 1fr;
-    height: 100vh;
     background: $bgcolor_color_alt_lite;
 
     @media print {
