@@ -804,6 +804,9 @@ ul {
     padding-right: 0;
   }
 }
+.content--full-width {
+  padding-right: 0;
+}
 
 .columns {
   columns: 1;

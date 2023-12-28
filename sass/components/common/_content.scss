@@ -37,6 +37,10 @@ ul {
     @media screen and (min-width: 125em) {
         padding-right: 0;
     }
+
+    &--full-width {
+        padding-right: 0;
+    }
 }
 
 .columns {
