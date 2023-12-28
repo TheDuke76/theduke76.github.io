@@ -667,7 +667,7 @@ header nav ul li a span, header nav ul li a:visited span, header nav ul li a but
 }
 
 .background {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   max-width: 200rem;
   height: 100vh;
