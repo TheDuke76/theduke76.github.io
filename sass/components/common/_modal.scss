@@ -54,6 +54,7 @@
 
         @media screen and (max-height: 749px) {
             max-width: 100% !important;
+            max-height: 100% !important;
         }
 
         @media screen and (min-width: 48em) {
@@ -71,6 +72,10 @@
     &-content { /* Style for the modal content */        
         overflow-y: auto;
         max-height: 93%;
+
+        @media screen and (max-height: 749px) {
+            max-height: 90% !important;
+        }
     }
 
     &-close-button {

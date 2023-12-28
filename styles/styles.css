@@ -970,6 +970,7 @@ a[href^=http]::after, a[href^="https://"]::after {
 @media screen and (max-height: 749px) {
   .modal-wrapper {
     max-width: 100% !important;
+    max-height: 100% !important;
   }
 }
 @media screen and (min-width: 48em) {
@@ -988,6 +989,11 @@ a[href^=http]::after, a[href^="https://"]::after {
 .modal-content { /* Style for the modal content */
   overflow-y: auto;
   max-height: 93%;
+}
+@media screen and (max-height: 749px) {
+  .modal-content {
+    max-height: 90% !important;
+  }
 }
 .modal-close-button {
   position: absolute;
