@@ -3,6 +3,7 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: min-content 1fr;
     background: $bgcolor_color_alt_lite;
+    height: 100vh;
 
     @media print {
         height: auto;

@@ -419,6 +419,7 @@ body {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: min-content 1fr;
   background: #CCC;
+  height: 100vh;
 }
 @media print {
   body {
