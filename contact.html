@@ -13,11 +13,11 @@
 				<ul>
 					<li class="col--1"><a href="/"><span>home</span></a></li>
 					<li class="col--2"><button class="js-toggle"><span>Menu</span></button></li>
-					<li class="col--3"><a href="/work.html" class="active"><span>Work</span></a></li>
+					<li class="col--3"><a href="/work.html"><span>Work</span></a></li>
 					<li class="col--4"><a href="/photos.html"><span>Photos</span></a></li>
 					<li class="col--5"><a href="/resume.html"><span>Resume</span></a></li>
 					<li class="col--6"><a href="/writing.html"><span>Writing</span></a></li>
-					<li class="col--7"><a href="/contact.html"><span>Contact</span></a></li>
+					<li class="col--7"><a href="/contact.html" class="active"><span>Contact</span></a></li>
 				</ul>				
 			</nav>			
 		</header>
@@ -27,19 +27,13 @@
 
 				<h2><span>WeatherTech.com</span></h2>
 
-				<div class="content content--full-width">
-					<ul class="photo-gallery">
-						<li><img src="/media/images/wt-homepage-ani.gif" alt="" />
-                       		<div>
-								<p class="bold title">WeatherTech.com Homepage</p>
-								<button class="js-open-modal">View Larger</button>
-							</div></li>
-						<li><img src="/media/images/pc-bowl.gif" alt="" />
-                            <div>
-								<p class="bold title">WeatherTech.com Pet Bowl Size Selector</p>
-								<button class="js-open-modal">View Larger</button>
-							</div></li>		
-					</ul>
+                    <form action="http://formspree.io/mdutkiewicz76@gmail.com">
+                        <label for="email">Email:</label>
+                        <input type="email" id="name" required name="_replyto">
+                        <label for="message">Message:</label>
+                        <textarea id="message" rows="4" required name="body"></textarea>
+                        <input type="submit" value="Send" onclick="submitForm()">
+                    </form>
 				</div>
 				<h1>Work</h1>
 

@@ -45,3 +45,22 @@
       closeModal();
     }
   });
+
+  function submitForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    // Validate the form fields (you can add more validation as needed)
+    if (!name || !email || !message) {
+        alert("Please fill in all fields");
+        return;
+    }
+
+    // Simulate sending an email (in a real scenario, you'd use a server-side script)
+    var emailContent = "Name: " + name + "\nEmail: " + email + "\nMessage: " + message;
+    alert("Email content:\n\n" + emailContent);
+
+    // Optionally, you can reset the form after submission
+    document.getElementById("contactForm").reset();
+}
