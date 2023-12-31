@@ -45,14 +45,14 @@
   }
 
   // Open modal when the button is clicked
-  const openModalImgButtons = document.querySelectorAll('.js-open-modal');
-  openModalButtons.forEach(function(element) {
+  const openModalImg = document.querySelectorAll('.js-open-modal');
+  openModalImg.forEach(function(element) {
       element.addEventListener('click', openModalImg);    
   });
 
   // Open modal when the button is clicked
-  const openModalLinkButtons = document.querySelectorAll('.js-ext');
-  openModalButtons.forEach(function(element) {
+  const openModalExt = document.querySelectorAll('.js-ext');
+  openModalExt.forEach(function(element) {
       element.addEventListener('click', openModalExt);      
   });
 
@@ -63,6 +63,7 @@
   // Close modal if overlay is clicked
   window.addEventListener('click', function(event) {
     const modal = document.getElementById('myModal');
+    preventDefault();
     if (event.target === modal) {
       closeModal();
     }
