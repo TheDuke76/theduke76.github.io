@@ -768,6 +768,10 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
   text-decoration: none;
 }
 
+.ext {
+  margin-right: 25px;
+}
+
 ul {
   padding-left: 2rem;
 }
@@ -833,7 +837,7 @@ ul {
   }
 }
 
-a[href^=http]::after, a[href^="https://"]::after {
+a[href^=http].ext::after, a[href^="https://"].ext::after {
   content: "";
   width: 20px;
   height: 20px;
@@ -846,7 +850,7 @@ a[href^=http]::after, a[href^="https://"]::after {
   position: absolute;
 }
 @media screen and (min-width: 1600px) {
-  a[href^=http]::after, a[href^="https://"]::after {
+  a[href^=http].ext::after, a[href^="https://"].ext::after {
     margin-left: 5px;
   }
 }
@@ -1059,6 +1063,9 @@ a[href^=http]::after, a[href^="https://"]::after {
     color: #000;
     filter: brightness(0);
   }
+}
+.modal.ext {
+  height: min-content;
 }
 
 @media print {

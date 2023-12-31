@@ -1,4 +1,4 @@
-a[href^="http"], a[href^="https://"] {
+a[href^="http"].ext, a[href^="https://"].ext {
     &::after {
         content: "";
         width: 20px;
