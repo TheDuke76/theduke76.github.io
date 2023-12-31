@@ -53,7 +53,8 @@
   // Open modal when the button is clicked
   const openModalExtButtons = document.querySelectorAll('.js-ext');
   openModalExtButtons.forEach(function(element) {
-      element.addEventListener('click', openModalExt);      
+      element.addEventListener('click', openModalExt);
+      element.preventDefault();      
   });
 
   // Close modal when the close button is clicked
@@ -65,7 +66,6 @@
   // Close modal if overlay is clicked
   window.addEventListener('click', function(event) {
     const modal = document.getElementById('myModal');
-    event.preventDefault();
     if (event.target === modal) {
       closeModal();
     }
