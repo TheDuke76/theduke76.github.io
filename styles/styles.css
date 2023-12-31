@@ -1069,6 +1069,10 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
   }
 }
 
+#js-ext-target {
+  font-weight: bold;
+}
+
 @media print {
   .no-print {
     display: none;
