@@ -65,7 +65,7 @@
   // Close modal if overlay is clicked
   window.addEventListener('click', function(event) {
     const modal = document.getElementById('myModal');
-    preventDefault();
+    event.preventDefault();
     if (event.target === modal) {
       closeModal();
     }
