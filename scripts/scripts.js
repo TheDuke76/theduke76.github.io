@@ -45,16 +45,15 @@
   }
 
   // Open modal when the button is clicked
-  const openModalButtons = document.querySelectorAll('.js-open-modal, .js-ext');
+  const openModalImgButtons = document.querySelectorAll('.js-open-modal');
   openModalButtons.forEach(function(element) {
-    var classes = this.classList;
+      element.addEventListener('click', openModalImg);    
+  });
 
-    if(classes.contains('js-open-modal')) {
-      element.addEventListener('click', openModalImg);
-    } else {
+  // Open modal when the button is clicked
+  const openModalLinkButtons = document.querySelectorAll('.js-ext');
+  openModalButtons.forEach(function(element) {
       element.addEventListener('click', openModalExt);      
-    }
-    
   });
 
   // Close modal when the close button is clicked
