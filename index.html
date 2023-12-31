@@ -28,7 +28,7 @@
 				<h2><span>Front-End Developer</span></h2>
 
 				<div class="content">
-					<p>I am a twenty-three year veteran of front-end website development. Bridging the gap from backend funtionality and creative implementation is an indiscipensible disciplin for the modern web. I have an extensive background in cross-platform development to W3C standards with rigid adherence to <a href="https://www.section508.gov/" class="ext">Section 508</a> ADA compliance with an emphasis on <a href="https://osec.doc.gov/accessibility/why_wcag_2_0.html" class="ext">WCAG 2.0</a>.</p> 
+					<p>I am a twenty-three year veteran of front-end website development with a background in graphic design. Bridging the gap from backend funtionality and creative implementation is an indiscipensible disciplin for the modern web. I have an extensive background in cross-platform development to W3C standards with rigid adherence to <a href="https://www.section508.gov/" class="ext js-ext">Section 508</a> ADA compliance with an emphasis on <a href="https://osec.doc.gov/accessibility/why_wcag_2_0.html" class="ext js-ext">WCAG 2.0.</a>  My skillset extends to robust JavaScript implementation, expert knowledge in jQuery, experience in React, and IU/UX implementation, prototyping, and wireframing.</p> 
 
 
 			</article>	
@@ -39,6 +39,16 @@
 			<span class="triangle"></span>		
 			<span class="rectangle"></span>		
 		</div>
+		<dialog id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-wrapper">
+				<h1 id="modal-title" class="modal-title">External Link</h1><button class="modal-close-button js-close-modal" id="closeModalButton"><span class="visually-hidden">Close</span></button>
+				<p>This link will open <span id="js-ext-target"></span> in an external window.</p>
+				<p>Do you wish to continue?</p>
+				<a href="" id="js-target" target="0">Yes</button>
+				<button class="js-close-modal">No</button>
+			</div>
+		</dialog>
 	</body>
 	<script async="" src="/scripts/scripts.js"></script>
 </html>

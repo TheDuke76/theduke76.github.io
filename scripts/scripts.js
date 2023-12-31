@@ -1,4 +1,5 @@
   const clickableElements = document.querySelectorAll('.js-toggle');
+  const externalLink = document.querySelectorAll('.js-ext');
 
   clickableElements.forEach(function(element) {
     element.addEventListener('click', function() {
@@ -6,9 +7,15 @@
     })
   });
 
+  externalLink.forEach(function(element) {
+    element.addEventListener('click', function() {
+      this.parentNode.classList.toggle('open');
+    })
+  });
+
 
   // Function to open the modal
-  function openModal() {
+  function openModalImg() {
     const modal = document.getElementById('myModal');
     modal.style.display = 'flex'; // or 'block' for display: block;
     const img = this.parentNode.previousElementSibling.src;
@@ -20,6 +27,15 @@
     document.getElementById('modal-title').appendChild(newTitle);
   }
 
+  function openModalExt() {
+    const modal = document.getElementById('myModal');
+    modal.style.display = 'flex'; // or 'block' for display: block;
+    const linkTarget = this.href;
+    const exitText = linkTarget ? linkTarget.textContent.trim() : null;
+    document.getElementById('js-target').href = linkTarget;
+    document.getElementById('js-ext-target').appendChild(exitText);
+  }
+
   // Function to close the modal
   function closeModal() {
     const modal = document.getElementById('myModal');
@@ -29,13 +45,20 @@
   }
 
   // Open modal when the button is clicked
-  const openModalButtons = document.querySelectorAll('.js-open-modal');
+  const openModalButtons = document.querySelectorAll('.js-open-modal, .js-ext');
   openModalButtons.forEach(function(element) {
-    element.addEventListener('click', openModal);
+    var classes = this.classList;
+
+    if(classes.contains('js-open-modal')) {
+      element.addEventListener('click', openModalImg);
+    } else {
+      element.addEventListener('click', openModalExt);      
+    }
+    
   });
 
   // Close modal when the close button is clicked
-  const closeModalButton = document.getElementById('closeModalButton');
+  const closeModalButton = document.querySelectorAll('.js-close-modal');
   closeModalButton.addEventListener('click', closeModal);
 
   // Close modal if overlay is clicked
