@@ -41,6 +41,7 @@
   function closeModal() {
     const modal = document.getElementById('myModal');
     const modalTitle = document.getElementById('modal-title');
+    const exitText = document.getElementById('js-ext-target');
     modal.style.display = 'none';
     modalTitle.textContent = '';
   }
