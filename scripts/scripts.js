@@ -33,7 +33,9 @@
     modal.style.display = 'flex'; // or 'block' for display: block;
     const linkTarget = this.href; 
     const exitText = document.createTextNode(linkTarget);
+    const modalTitle = document.createTextNode('External Link');
     document.getElementById('js-target').href = linkTarget;
+    document.getElementById('modal-title').appendChild(modalTitle);
     document.getElementById('js-ext-target').appendChild(exitText);
   }
 
@@ -44,6 +46,7 @@
     const exitText = document.getElementById('js-ext-target');
     modal.style.display = 'none';
     modalTitle.textContent = '';
+    exitText.textContent = '';
   }
 
   // Open modal when the button is clicked
