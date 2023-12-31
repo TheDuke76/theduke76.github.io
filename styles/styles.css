@@ -999,6 +999,10 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
     max-width: 700px;
   }
 }
+.modal-wrapper.ext {
+  height: min-content;
+  margin: 0;
+}
 .modal-content { /* Style for the modal content */
   overflow-y: auto;
   max-height: 93%;
@@ -1063,9 +1067,6 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
     color: #000;
     filter: brightness(0);
   }
-}
-.modal.ext {
-  height: min-content;
 }
 
 @media print {

@@ -71,6 +71,11 @@
         @media screen and (min-width: 1630px) {
             max-width: 700px;
         }
+
+        &.ext {
+            height: min-content;
+            margin: 0;
+        }
     }
 
     &-content { /* Style for the modal content */        
@@ -141,9 +146,5 @@
         }
 
         
-    }
-
-    &.ext {
-        height: min-content;
-    }
+    }    
  }
