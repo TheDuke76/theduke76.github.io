@@ -31,7 +31,7 @@
     const modal = document.getElementById('myModal');
     modal.style.display = 'flex'; // or 'block' for display: block;
     const linkTarget = this.href;
-    const exitText = linkTarget.textContent;    
+    const exitText = linkTarget ? linkTarget.textContent.trim() : null;   
     const writeExitText = document.createTextNode(exitText);
     document.getElementById('js-target').href = linkTarget;
     document.getElementById('js-ext-target').appendChild(writeExitText);
