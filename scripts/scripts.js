@@ -58,7 +58,9 @@
 
   // Close modal when the close button is clicked
   const closeModalButton = document.querySelectorAll('.js-close-modal');
-  closeModalButton.addEventListener('click', closeModal);
+  closeModalButton.forEach(function(element) {
+      element.addEventListener('click', closeModal);    
+  });
 
   // Close modal if overlay is clicked
   window.addEventListener('click', function(event) {
