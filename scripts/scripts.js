@@ -30,11 +30,10 @@
   function openModalExt() {
     const modal = document.getElementById('myModal');
     modal.style.display = 'flex'; // or 'block' for display: block;
-    const linkTarget = this.href;
-    const exitText = linkTarget ? linkTarget.textContent.trim() : null;   
-    const writeExitText = document.createTextNode(exitText);
+    const linkTarget = this.href; 
+    const exitText = document.createTextNode(linkTarget);
     document.getElementById('js-target').href = linkTarget;
-    document.getElementById('js-ext-target').appendChild(writeExitText);
+    document.getElementById('js-ext-target').appendChild(exitText);
   }
 
   // Function to close the modal
