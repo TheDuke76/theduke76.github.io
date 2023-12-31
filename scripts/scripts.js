@@ -27,7 +27,8 @@
     document.getElementById('modal-title').appendChild(newTitle);
   }
 
-  function openModalExt() {
+  function openModalExt(event) {
+    event.preventDefault();      
     const modal = document.getElementById('myModal');
     modal.style.display = 'flex'; // or 'block' for display: block;
     const linkTarget = this.href; 
@@ -54,7 +55,6 @@
   const openModalExtButtons = document.querySelectorAll('.js-ext');
   openModalExtButtons.forEach(function(element) {
       element.addEventListener('click', openModalExt);
-      element.preventDefault();      
   });
 
   // Close modal when the close button is clicked
