@@ -856,9 +856,6 @@ ul {
 .skew-box-left img {
   padding-left: 7rem;
 }
-.skew-box-left div {
-  padding-left: 70px;
-}
 .skew-box-right {
   overflow: visible;
   transform-origin: top left;
