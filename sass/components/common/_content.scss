@@ -45,11 +45,16 @@ ul {
     &--full-width {
         padding-right: 0;
 
-        &_two-col {
-            display: flex;
-            
-            div {
-                flex: 1 0 50%;
+        @media screen and (min-width: 1000px) {
+            &_two-col {
+                display: flex;
+                
+                &-img {
+                    flex-direction: row-reverse;
+                }
+                div {
+                    flex: 1 0 50%;
+                }
             }
         }
     }
