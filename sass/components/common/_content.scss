@@ -44,6 +44,11 @@ ul {
 
     &--full-width {
         padding-right: 0;
+        display: flex;
+
+        img, div {
+            flex: 1 0 50%;
+        }
     }
 }
 
