@@ -821,6 +821,7 @@ ul {
 @media screen and (min-width: 1000px) {
   .content--full-width_two-col-img {
     flex-direction: initial;
+    border: 1px solid #382785;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -891,7 +892,7 @@ ul {
 }
 @media screen and (min-width: 1000px) {
   .skew-box-right div p {
-    padding: 0 4rem 0 8rem;
+    padding: 0 7rem 0 8rem;
   }
 }
 
