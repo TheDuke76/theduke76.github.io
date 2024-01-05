@@ -811,6 +811,8 @@ ul {
 }
 .content--full-width {
   padding-right: 0;
+}
+.content--full-width_two-col {
   display: flex;
 }
 .content--full-width_two-col div {

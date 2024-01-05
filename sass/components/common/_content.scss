@@ -44,9 +44,10 @@ ul {
 
     &--full-width {
         padding-right: 0;
-        display: flex;
 
         &_two-col {
+            display: flex;
+            
             div {
                 flex: 1 0 50%;
             }
