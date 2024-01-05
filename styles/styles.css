@@ -869,9 +869,13 @@ ul {
     margin-left: -70px;
   }
 }
+.skew-box-left div {
+  height: 100%;
+}
 @media screen and (min-width: 1000px) {
   .skew-box-left img {
     padding-left: 7rem;
+    height: 100% !important;
   }
 }
 @media screen and (min-width: 1000px) {
