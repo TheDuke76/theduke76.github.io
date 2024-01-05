@@ -1,0 +1,21 @@
+.skew-box {
+    transform: skew(20deg);
+    overflow: hidden;
+
+    &-left, &-right {
+        div {
+            transform: skew(-20deg);
+        }
+    }
+
+    &-left {
+        margin-left: -70px;
+        margin-right: 2rem;
+
+        div {
+            padding-left: 70px;
+        }
+    }
+
+    
+}
