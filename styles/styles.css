@@ -816,7 +816,7 @@ ul {
   display: flex;
 }
 .content--full-width_two-col-img {
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
 }
 @media screen and (min-width: 1000px) {
   .content--full-width_two-col-img {
@@ -853,28 +853,42 @@ ul {
   }
 }
 
-.skew-box {
-  transform: skew(20deg);
-  overflow: hidden;
+@media screen and (min-width: 1000px) {
+  .skew-box {
+    transform: skew(20deg);
+    overflow: hidden;
+  }
 }
-.skew-box-left div, .skew-box-right div {
-  transform: skew(-20deg);
+@media screen and (min-width: 1000px) {
+  .skew-box-left div, .skew-box-right div {
+    transform: skew(-20deg);
+  }
 }
-.skew-box-left {
-  margin-left: -70px;
+@media screen and (min-width: 1000px) {
+  .skew-box-left {
+    margin-left: -70px;
+  }
 }
-.skew-box-left img {
-  padding-left: 7rem;
+@media screen and (min-width: 1000px) {
+  .skew-box-left img {
+    padding-left: 7rem;
+  }
 }
-.skew-box-right {
-  overflow: visible;
-  transform-origin: top left;
+@media screen and (min-width: 1000px) {
+  .skew-box-right {
+    overflow: visible;
+    transform-origin: top left;
+  }
 }
-.skew-box-right div {
-  margin-left: -8rem;
+@media screen and (min-width: 1000px) {
+  .skew-box-right div {
+    margin-left: -8rem;
+  }
 }
-.skew-box-right div p {
-  padding: 0 4rem 0 8rem;
+@media screen and (min-width: 1000px) {
+  .skew-box-right div p {
+    padding: 0 4rem 0 8rem;
+  }
 }
 
 a[href^=http].ext::after, a[href^="https://"].ext::after {

@@ -1,33 +1,45 @@
 .skew-box {
-    transform: skew(20deg);
-    overflow: hidden;
+    @media screen and (min-width: 1000px) {
+        transform: skew(20deg);
+        overflow: hidden;
+    }    
 
     &-left, &-right {
         div {
-            transform: skew(-20deg);
-        }
-    }
-
-    &-left {
-        margin-left: -70px;
-
-        img {
-            padding-left: 7rem;
-        }
-    }
-
-    &-right {
-        overflow: visible;
-        transform-origin: top left;
-
-        div {
-            margin-left: -8rem;
-
-            p {
-                padding: 0 4rem 0 8rem;
+            @media screen and (min-width: 1000px) {
+                transform: skew(-20deg);
             }
         }
     }
 
-    
+    &-left {
+        @media screen and (min-width: 1000px) {
+            margin-left: -70px;
+        }
+
+        img {
+            @media screen and (min-width: 1000px) {
+                padding-left: 7rem;
+            }
+        }
+    }
+
+    &-right {
+        @media screen and (min-width: 1000px) {
+            overflow: visible;
+            transform-origin: top left;
+        }
+
+        div {
+            @media screen and (min-width: 1000px) {
+                margin-left: -8rem;
+            }
+
+            p {
+                @media screen and (min-width: 1000px) {
+                    padding: 0 4rem 0 8rem;
+                }
+            }
+        }
+    }
 }
