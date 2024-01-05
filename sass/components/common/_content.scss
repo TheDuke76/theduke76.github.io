@@ -46,8 +46,10 @@ ul {
         padding-right: 0;
         display: flex;
 
-        img, div {
-            flex: 1 0 50%;
+        &_two-col {
+            div {
+                flex: 1 0 50%;
+            }
         }
     }
 }

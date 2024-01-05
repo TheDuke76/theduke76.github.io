@@ -813,7 +813,7 @@ ul {
   padding-right: 0;
   display: flex;
 }
-.content--full-width img, .content--full-width div {
+.content--full-width_two-col div {
   flex: 1 0 50%;
 }
 
