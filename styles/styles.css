@@ -852,10 +852,22 @@ ul {
 }
 .skew-box-left {
   margin-left: -70px;
-  margin-right: 2rem;
+}
+.skew-box-left img {
+  padding-left: 7rem;
 }
 .skew-box-left div {
   padding-left: 70px;
+}
+.skew-box-right {
+  overflow: visible;
+  transform-origin: top left;
+}
+.skew-box-right div {
+  margin-left: -8rem;
+}
+.skew-box-right div p {
+  padding: 0 4rem 0 8rem;
 }
 
 a[href^=http].ext::after, a[href^="https://"].ext::after {

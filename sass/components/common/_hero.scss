@@ -10,10 +10,26 @@
 
     &-left {
         margin-left: -70px;
-        margin-right: 2rem;
+
+        img {
+            padding-left: 7rem;
+        }
 
         div {
             padding-left: 70px;
+        }
+    }
+
+    &-right {
+        overflow: visible;
+        transform-origin: top left;
+
+        div {
+            margin-left: -8rem;
+
+            p {
+                padding: 0 4rem 0 8rem;
+            }
         }
     }
 
