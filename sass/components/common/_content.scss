@@ -1,81 +1,21 @@
-a, a:visited {
-    color: #382785;
-    text-decoration: underline;
+.skew-box {
+    transform: skew(20deg);
+    overflow: hidden;
 
-    &:hover, &:focus {
-        text-decoration: none;
-    }
-}
-
-.ext {
-    margin-right: 25px;
-}
-
-ul {
-    padding-left: 2rem;
-}
-
-.content {
-    transition: all 0.1s linear;
-    
-    @media screen and (min-width: 62.5em) {
-        padding-right: 50%;
-    }
-
-    @media screen and (min-width: 70em) {
-        padding-right: 40%;
-    }
-
-    @media screen and (min-width: 85.625em) {
-        padding-right: 30%;
-    }
-
-    @media screen and (min-width: 98.75em) {
-        padding-right: 20%;
-    }
-
-    @media screen and (min-width: 107.5em) {
-        padding-right: 10%;
-    }
-
-    @media screen and (min-width: 125em) {
-        padding-right: 0;
-    }
-
-    &--full-width {
-        padding-right: 0;
-
-        &_two-col {
-            display: flex;
-            
-            div {
-                flex: 1 0 50%;
-            }
+    &-left, &-right {
+        div {
+            transform: skew(-20deg);
         }
     }
-}
 
-.columns {
-    columns: 1;
+    &-left {
+        margin-left: -70px;
+        margin-right: 2rem;
 
-    @media screen and (min-width:1000px) and (max-width: 1049px) {
-        columns: 1;
+        div {
+            padding-left: 70px;
+        }
     }
 
-    @media screen and (min-width: 380px) and (max-width: 529px),
-    (min-width: 768px) and (max-width: 799px),
-    (min-width:1050px) and (max-width: 1279px) {
-        columns: 2;
-    }
-
-    @media screen and (min-width:530px) and (max-width: 699px), 
-    (min-width: 800px) and (max-width:999px), 
-    (min-width: 1280px) and (max-width: 1479px) {
-        columns: 3;
-    }
-
-    @media screen and (min-width:700px) and (max-width:767px),
-    (min-width: 1480px) {
-        columns: 4;
-    }
+    
 }

@@ -760,87 +760,19 @@ header nav ul li a span, header nav ul li a:visited span, header nav ul li a but
   display: block;
 }
 
-a, a:visited {
-  color: #382785;
-  text-decoration: underline;
+.skew-box {
+  transform: skew(20deg);
+  overflow: hidden;
 }
-a:hover, a:focus, a:visited:hover, a:visited:focus {
-  text-decoration: none;
+.skew-box-left div, .skew-box-right div {
+  transform: skew(-20deg);
 }
-
-.ext {
-  margin-right: 25px;
+.skew-box-left {
+  margin-left: -70px;
+  margin-right: 2rem;
 }
-
-ul {
-  padding-left: 2rem;
-}
-
-.content {
-  transition: all 0.1s linear;
-}
-@media screen and (min-width: 62.5em) {
-  .content {
-    padding-right: 50%;
-  }
-}
-@media screen and (min-width: 70em) {
-  .content {
-    padding-right: 40%;
-  }
-}
-@media screen and (min-width: 85.625em) {
-  .content {
-    padding-right: 30%;
-  }
-}
-@media screen and (min-width: 98.75em) {
-  .content {
-    padding-right: 20%;
-  }
-}
-@media screen and (min-width: 107.5em) {
-  .content {
-    padding-right: 10%;
-  }
-}
-@media screen and (min-width: 125em) {
-  .content {
-    padding-right: 0;
-  }
-}
-.content--full-width {
-  padding-right: 0;
-}
-.content--full-width_two-col {
-  display: flex;
-}
-.content--full-width_two-col div {
-  flex: 1 0 50%;
-}
-
-.columns {
-  columns: 1;
-}
-@media screen and (min-width: 1000px) and (max-width: 1049px) {
-  .columns {
-    columns: 1;
-  }
-}
-@media screen and (min-width: 380px) and (max-width: 529px), (min-width: 768px) and (max-width: 799px), (min-width: 1050px) and (max-width: 1279px) {
-  .columns {
-    columns: 2;
-  }
-}
-@media screen and (min-width: 530px) and (max-width: 699px), (min-width: 800px) and (max-width: 999px), (min-width: 1280px) and (max-width: 1479px) {
-  .columns {
-    columns: 3;
-  }
-}
-@media screen and (min-width: 700px) and (max-width: 767px), (min-width: 1480px) {
-  .columns {
-    columns: 4;
-  }
+.skew-box-left div {
+  padding-left: 70px;
 }
 
 a[href^=http].ext::after, a[href^="https://"].ext::after {
