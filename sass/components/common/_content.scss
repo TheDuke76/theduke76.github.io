@@ -45,17 +45,22 @@ ul {
     &--full-width {
         padding-right: 0;
 
-        @media screen and (min-width: 1000px) {
-            &_two-col {
-                display: flex;
-                
-                &-img {
-                    flex-direction: row-reverse;
-                }
-                div {
-                    flex: 1 0 50%;
+        &_two-col {
+            display: flex;
+            
+            &-img {
+                flex-direction: row-reverse;
+
+                @media screen and (min-width: 1000px) {
+                    flex-direction: initial;
                 }
             }
+
+            div {
+                @media screen and (min-width: 1000px) {
+                    flex: 1 0 50%;
+                }
+            }            
         }
     }
 }
