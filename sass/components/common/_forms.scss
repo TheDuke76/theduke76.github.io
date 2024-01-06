@@ -2,4 +2,24 @@ input, textarea {
     margin: 1rem 0;
     font-size: 1.4rem;
     padding: 1rem;    
+    box-sizing: border-box;
+
+    &[type="submit"] {
+        background: #382785;
+        color: #FFF;
+        border: 1px solid #382785;
+        border-radius: 1rem;
+        font-weight: 800;
+        display: block;
+        width: 100px;
+        margin-right: 0;
+        margin-left: auto;
+        cursor: pointer;
+        transition: all .1s linear;
+
+        &:focus, &:hover {
+            background: #FFF;
+            color: #382785;
+        }
+    }
 }

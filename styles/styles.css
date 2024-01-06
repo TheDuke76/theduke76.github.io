@@ -1329,6 +1329,24 @@ input, textarea {
   margin: 1rem 0;
   font-size: 1.4rem;
   padding: 1rem;
+  box-sizing: border-box;
+}
+input[type=submit], textarea[type=submit] {
+  background: #382785;
+  color: #FFF;
+  border: 1px solid #382785;
+  border-radius: 1rem;
+  font-weight: 800;
+  display: block;
+  width: 100px;
+  margin-right: 0;
+  margin-left: auto;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+input[type=submit]:focus, input[type=submit]:hover, textarea[type=submit]:focus, textarea[type=submit]:hover {
+  background: #FFF;
+  color: #382785;
 }
 
 @media print {
