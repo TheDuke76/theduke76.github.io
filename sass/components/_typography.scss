@@ -9,6 +9,10 @@ body {
 	@media print {
 		font-size: 1.4rem;
 		overflow: auto;
+
+		::-webkit-scrollbar {
+			display: none;
+		}
 	}
 } /* =16px */
 
