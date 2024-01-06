@@ -47,6 +47,12 @@ ul {
 
         &_two-col {
             display: flex;
+            gap: 1rem;
+            flex-direction: column;
+
+            @media screen and (min-width: 1000px) {
+                flex-direction: row;
+            }
             
             &-img {
                 flex-direction: column-reverse;

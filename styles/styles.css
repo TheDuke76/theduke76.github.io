@@ -814,6 +814,13 @@ ul {
 }
 .content--full-width_two-col {
   display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+@media screen and (min-width: 1000px) {
+  .content--full-width_two-col {
+    flex-direction: row;
+  }
 }
 .content--full-width_two-col-img {
   flex-direction: column-reverse;
