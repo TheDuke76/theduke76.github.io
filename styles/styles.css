@@ -1325,6 +1325,12 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
   font-weight: bold;
 }
 
+input, textarea {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
 @media print {
   .no-print {
     display: none;
@@ -1363,6 +1369,7 @@ h2, .label {
   margin-right: -38px;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
   transform: skew(-34deg);
+  display: block;
 }
 @media print {
   h2, .label {
