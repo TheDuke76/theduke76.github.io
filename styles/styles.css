@@ -1195,8 +1195,33 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
   }
 }
 .modal-wrapper.ext {
-  height: min-content;
   margin: 0;
+  background: #FFF;
+  display: block;
+}
+@media screen and (min-width: 48em) {
+  .modal-wrapper.ext {
+    height: min-content;
+  }
+}
+.modal-wrapper.ext .modal-title {
+  color: #000;
+}
+.modal-wrapper.ext button {
+  padding: 1rem;
+  min-width: 50%;
+  background: #FFF;
+  border: 1px solid #000;
+  border-radius: 1rem;
+  font-weight: 800;
+}
+.modal-wrapper.ext .ext-link {
+  padding: 1rem;
+  min-width: 50%;
+  background: #FFF;
+  border: 1px solid #000;
+  border-radius: 1rem;
+  font-weight: 800;
 }
 .modal-content { /* Style for the modal content */
   overflow-y: auto;
