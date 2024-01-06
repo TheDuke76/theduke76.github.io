@@ -1215,6 +1215,7 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
   border-radius: 1rem;
   font-weight: 800;
   cursor: pointer;
+  transition: all 0.1s linear;
 }
 .modal-wrapper.ext button:not(.modal-close-button):focus, .modal-wrapper.ext button:not(.modal-close-button):hover, .modal-wrapper.ext .ext-link:focus, .modal-wrapper.ext .ext-link:hover {
   background: #000;
