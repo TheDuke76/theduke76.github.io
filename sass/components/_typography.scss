@@ -5,6 +5,10 @@ html {
 
 body { 
 	font-size: 1.6rem; 
+
+	@media print {
+		font-size: 1.4rem;
+	}
 } /* =16px */
 
 /*Addresses `h1` font sizes within `section` and `article` in Firefox 4+, Safari 5, and Chrome. */
