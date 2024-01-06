@@ -1207,7 +1207,7 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
 .modal-wrapper.ext .modal-title {
   color: #000;
 }
-.modal-wrapper.ext button {
+.modal-wrapper.ext button:not(.modal-close-button), .modal-wrapper.ext .ext-link {
   padding: 1rem;
   min-width: 50%;
   background: #FFF;
@@ -1216,12 +1216,15 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
   font-weight: 800;
 }
 .modal-wrapper.ext .ext-link {
-  padding: 1rem;
-  min-width: 50%;
-  background: #FFF;
-  border: 1px solid #000;
-  border-radius: 1rem;
-  font-weight: 800;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin-right: 1rem;
+}
+.modal-wrapper.ext div {
+  display: flex;
+  flex-direction: row;
 }
 .modal-content { /* Style for the modal content */
   overflow-y: auto;

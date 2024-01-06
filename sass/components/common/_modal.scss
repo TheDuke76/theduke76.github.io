@@ -96,7 +96,7 @@
                 color: #000;
             }
 
-            button {
+            button:not(.modal-close-button), .ext-link {
                 padding: 1rem;
                 min-width: 50%;
                 background: #FFF;
@@ -106,12 +106,17 @@
             }
 
             .ext-link {
-                padding: 1rem;
-                min-width: 50%;
-                background: #FFF;
-                border: 1px solid #000;
-                border-radius: 1rem;
-                font-weight: 800;
+                display: inline-block;
+                text-align: center;
+                text-decoration: none;
+                box-sizing: border-box;
+                margin-right: 1rem;
+
+            }
+
+            div {
+                display: flex;
+                flex-direction: row;
             }
         }
     }
