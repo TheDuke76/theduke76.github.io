@@ -1330,6 +1330,7 @@ input, textarea {
   font-size: 1.4rem;
   padding: 1rem;
   box-sizing: border-box;
+  width: 100%;
 }
 input[type=submit], textarea[type=submit] {
   background: #382785;
