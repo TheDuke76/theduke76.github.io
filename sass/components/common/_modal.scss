@@ -104,6 +104,7 @@
                 border-radius: 1rem;
                 font-weight: 800;
                 cursor: pointer;
+                transition: all .1s linear;
 
                 &:focus, &:hover {
                     background: #000;
