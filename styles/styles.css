@@ -1214,6 +1214,11 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
   border: 1px solid #000;
   border-radius: 1rem;
   font-weight: 800;
+  cursor: pointer;
+}
+.modal-wrapper.ext button:not(.modal-close-button):focus, .modal-wrapper.ext button:not(.modal-close-button):hover, .modal-wrapper.ext .ext-link:focus, .modal-wrapper.ext .ext-link:hover {
+  background: #000;
+  color: #FFF;
 }
 @media screen and (min-width: 48em) {
   .modal-wrapper.ext button:not(.modal-close-button), .modal-wrapper.ext .ext-link {
@@ -1225,6 +1230,13 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
   text-align: center;
   text-decoration: none;
   box-sizing: border-box;
+  border: 1px solid #382785;
+  background: #382785;
+  color: #FFF;
+}
+.modal-wrapper.ext .ext-link:focus, .modal-wrapper.ext .ext-link:hover {
+  background: #FFF;
+  color: #382785;
 }
 .modal-wrapper.ext div {
   display: flex;

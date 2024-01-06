@@ -103,6 +103,12 @@
                 border: 1px solid #000;
                 border-radius: 1rem;
                 font-weight: 800;
+                cursor: pointer;
+
+                &:focus, &:hover {
+                    background: #000;
+                    color: #FFF
+                }
 
                 @media screen and (min-width: 48em) {
                     width: 30%;
@@ -114,6 +120,14 @@
                 text-align: center;
                 text-decoration: none;
                 box-sizing: border-box;
+                border: 1px solid #382785;
+                background: #382785;
+                color: #FFF;
+
+                &:focus, &:hover {
+                    background: #FFF;
+                    color: #382785;
+                }
             }
 
             div {
