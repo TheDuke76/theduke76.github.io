@@ -938,6 +938,12 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
   grid-gap: 2rem;
   list-style: none;
   padding: 0;
+  justify-content: space-evenly;
+}
+@media screen and (min-width: 48.0625em) {
+  .photo-gallery {
+    justify-content: center;
+  }
 }
 .photo-gallery li {
   background: #FFF;
