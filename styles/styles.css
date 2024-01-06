@@ -1353,7 +1353,7 @@ h1 {
   }
 }
 
-h2 {
+h2, .label {
   background: #382785;
   padding: 5px 0 5px 38px;
   color: #FFF;
@@ -1365,7 +1365,7 @@ h2 {
   transform: skew(-34deg);
 }
 @media print {
-  h2 {
+  h2, .label {
     box-shadow: none;
     color: #000;
     background: #FFF;
@@ -1377,12 +1377,12 @@ h2 {
     padding: 5px;
   }
 }
-h2 span {
+h2 span, .label span {
   transform: skew(34deg);
   display: inline-block;
 }
 @media print {
-  h2 span {
+  h2 span, .label span {
     transform: none;
   }
 }
