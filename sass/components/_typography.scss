@@ -7,10 +7,10 @@ body {
 	font-size: 1.6rem; 
 
 	@media print {
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 		overflow: auto;
 
-		::-webkit-scrollbar {
+		&::-webkit-scrollbar {
 			display: none;
 		}
 	}
@@ -20,6 +20,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	margin:0 0 10px 0;
+
+	@media print {
+		margin-bottom: .5rem;
+	}
 }
 
 h1 {
@@ -50,7 +54,7 @@ h2, .label {
 		box-shadow: none;
 		transform: none;
 		border-bottom: 1px solid #000;
-		margin: 0 0 1rem 0;
+		margin: 0 0 .5rem 0;
 		padding:5px;
 	}
  

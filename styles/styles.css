@@ -145,6 +145,7 @@ p {
 @media print {
   p {
     color: #000;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -1366,10 +1367,10 @@ body {
 }
 @media print {
   body {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     overflow: auto;
   }
-  body ::-webkit-scrollbar {
+  body::-webkit-scrollbar {
     display: none;
   }
 }
@@ -1378,6 +1379,11 @@ body {
 /*Addresses `h1` font sizes within `section` and `article` in Firefox 4+, Safari 5, and Chrome. */
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px 0;
+}
+@media print {
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5rem;
+  }
 }
 
 h1 {
@@ -1410,7 +1416,7 @@ h2, .label {
     box-shadow: none;
     transform: none;
     border-bottom: 1px solid #000;
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.5rem 0;
     padding: 5px;
   }
 }
