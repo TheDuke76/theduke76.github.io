@@ -1362,8 +1362,8 @@ html {
 }
 
 body {
-  font-size: 1.4rem;
-} /* =14px */
+  font-size: 1.6rem;
+} /* =16px */
 /*Addresses `h1` font sizes within `section` and `article` in Firefox 4+, Safari 5, and Chrome. */
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px 0;
