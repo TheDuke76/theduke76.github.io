@@ -959,8 +959,8 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
 }
 @media screen and (max-height: 749px) and (max-width: 915px) {
   .photo-gallery li:hover div, .photo-gallery li:focus-within div {
-    border-top: 0;
-    background-color: transparent;
+    border-top: 0 !important;
+    background-color: transparent !important;
   }
 }
 @media screen and (min-width: 48em) {
@@ -980,10 +980,8 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
 }
 @media screen and (max-height: 749px) and (max-width: 915px) {
   .photo-gallery li div {
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    top: 0;
+    height: 100% !important;
+    top: 0 !important;
   }
 }
 @media screen and (min-width: 48em) {
@@ -1009,7 +1007,7 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
 }
 @media screen and (max-height: 749px) and (max-width: 915px) {
   .photo-gallery li div p {
-    color: transparent;
+    color: transparent !important;
   }
 }
 @media screen and (min-width: 48em) {
@@ -1030,15 +1028,12 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
 }
 @media screen and (max-height: 749px) and (max-width: 915px) {
   .photo-gallery li div button {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    border: 0;
-    background: transparent;
-    cursor: pointer;
+    height: 100% !important;
+    width: 100% !important;
+    position: absolute !important;
+    margin: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
   }
 }
 @media screen and (min-width: 48em) {
@@ -1072,14 +1067,8 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
 }
 @media screen and (max-height: 749px) and (max-width: 915px) {
   .photo-gallery li div button span {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+    clip: rect(0 0 0 0) !important;
+    position: absolute !important;
   }
 }
 @media screen and (min-width: 48em) {
