@@ -989,19 +989,17 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
 .modal {
   display: none;
   position: fixed;
-  top: 70px;
   left: -3px;
   width: 100%;
-  height: 90%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 2;
   padding: 0;
 }
 @media screen and (max-height: 749px) {
   .modal {
-    height: 100% !important;
     padding: 0 !important;
   }
 }
@@ -1010,7 +1008,6 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
     top: 0;
     left: 0;
     padding: 14px;
-    height: 100%;
   }
 }
 .modal.open {
@@ -1023,6 +1020,10 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
 }
 .modal-title {
   max-width: 75%;
+  color: #FFF;
+  padding: 0 10px;
+  grid-column: 1/span 5;
+  height: min-content;
 }
 @media screen and (max-height: 749px) {
   .modal-title {
@@ -1032,15 +1033,20 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
 @media screen and (min-width: 48em) {
   .modal-title {
     max-width: initial;
+    color: #000;
+    padding: 0;
   }
 }
 .modal-wrapper {
   position: relative;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
   width: 100%;
   height: 100%;
   transition: all 0.1s linear;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-content: start;
 }
 @media screen and (max-height: 749px) {
   .modal-wrapper {
@@ -1050,6 +1056,8 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
 }
 @media screen and (min-width: 48em) {
   .modal-wrapper {
+    display: block;
+    background-color: #fff;
     padding: 20px;
     max-width: 80%;
     max-height: 80%;
@@ -1072,11 +1080,20 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
 }
 .modal-content { /* Style for the modal content */
   overflow-y: auto;
-  max-height: 93%;
+  height: 100%;
+  text-align: center;
+  grid-row: 2;
+  grid-column: 1/span 5;
+  margin: 0 -10px;
 }
 @media screen and (max-height: 749px) {
   .modal-content {
     max-height: 90% !important;
+  }
+}
+@media screen and (min-width: 48em) {
+  .modal-content {
+    margin: 0;
   }
 }
 .modal-close-button {
