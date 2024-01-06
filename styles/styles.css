@@ -1028,6 +1028,7 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
 @media screen and (max-height: 749px) {
   .modal-title {
     max-width: 75% !important;
+    color: #FFF !important;
   }
 }
 @media screen and (min-width: 48em) {
@@ -1052,6 +1053,8 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
   .modal-wrapper {
     max-width: 100% !important;
     max-height: 100% !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    padding: 10px !important;
   }
 }
 @media screen and (min-width: 48em) {
@@ -1094,6 +1097,7 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
 @media screen and (min-width: 48em) {
   .modal-content {
     margin: 0;
+    height: 90%;
   }
 }
 .modal-close-button {
