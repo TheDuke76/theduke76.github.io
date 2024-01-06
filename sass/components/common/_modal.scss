@@ -98,11 +98,15 @@
 
             button:not(.modal-close-button), .ext-link {
                 padding: 1rem;
-                min-width: 50%;
+                width: 100%;
                 background: #FFF;
                 border: 1px solid #000;
                 border-radius: 1rem;
                 font-weight: 800;
+
+                @media screen and (min-width: 48em) {
+                    width: 30%;
+                }
             }
 
             .ext-link {
@@ -110,13 +114,13 @@
                 text-align: center;
                 text-decoration: none;
                 box-sizing: border-box;
-                margin-right: 1rem;
-
             }
 
             div {
                 display: flex;
                 flex-direction: row;
+                gap: 1rem;
+                justify-content: space-evenly;
             }
         }
     }
