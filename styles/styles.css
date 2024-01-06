@@ -956,8 +956,12 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
 .photo-gallery li:hover div, .photo-gallery li:focus-within div {
   color: #FFF;
   padding: 1rem;
-  border-top: 1px solid #000;
-  background-color: rgba(0, 0, 0, 0.5);
+}
+@media screen and (min-width: 48em) {
+  .photo-gallery li:hover div, .photo-gallery li:focus-within div {
+    border-top: 1px solid #000;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }
 .photo-gallery li:hover div button, .photo-gallery li:focus-within div button {
   opacity: 1;
@@ -984,6 +988,14 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
     padding: 1rem;
   }
 }
+.photo-gallery li div p {
+  color: transparent;
+}
+@media screen and (min-width: 48em) {
+  .photo-gallery li div p {
+    color: inherit;
+  }
+}
 .photo-gallery li div button {
   height: 100%;
   width: 100%;
@@ -993,6 +1005,7 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
   margin: 0;
   border: 0;
   background: transparent;
+  cursor: pointer;
 }
 @media screen and (min-width: 48em) {
   .photo-gallery li div button {
@@ -1006,8 +1019,11 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
     text-transform: uppercase;
     font-weight: 800;
     color: #382785;
-    cursor: pointer;
     outline: none;
+    height: auto;
+    width: auto;
+    background-color: #FFF;
+    position: static;
   }
 }
 .photo-gallery li div button span {
