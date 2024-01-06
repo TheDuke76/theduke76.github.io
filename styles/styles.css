@@ -965,7 +965,7 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
 .photo-gallery li div {
   height: 100%;
 }
-@media screen and (min-width: 48) {
+@media screen and (min-width: 48em) {
   .photo-gallery li div {
     height: auto;
     padding: 0;
