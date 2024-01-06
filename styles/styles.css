@@ -1209,22 +1209,28 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
 }
 .modal-wrapper.ext button:not(.modal-close-button), .modal-wrapper.ext .ext-link {
   padding: 1rem;
-  min-width: 50%;
+  width: 100%;
   background: #FFF;
   border: 1px solid #000;
   border-radius: 1rem;
   font-weight: 800;
+}
+@media screen and (min-width: 48em) {
+  .modal-wrapper.ext button:not(.modal-close-button), .modal-wrapper.ext .ext-link {
+    width: 30%;
+  }
 }
 .modal-wrapper.ext .ext-link {
   display: inline-block;
   text-align: center;
   text-decoration: none;
   box-sizing: border-box;
-  margin-right: 1rem;
 }
 .modal-wrapper.ext div {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+  justify-content: space-evenly;
 }
 .modal-content { /* Style for the modal content */
   overflow-y: auto;
