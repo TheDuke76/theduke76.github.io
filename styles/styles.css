@@ -957,6 +957,12 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
   color: #FFF;
   padding: 1rem;
 }
+@media screen and (max-height: 749px) and (max-width: 915px) {
+  .photo-gallery li:hover div, .photo-gallery li:focus-within div {
+    border-top: 0;
+    background-color: transparent;
+  }
+}
 @media screen and (min-width: 48em) {
   .photo-gallery li:hover div, .photo-gallery li:focus-within div {
     border-top: 1px solid #000;
@@ -971,6 +977,14 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
   position: absolute;
   width: 100%;
   top: 0;
+}
+@media screen and (max-height: 749px) and (max-width: 915px) {
+  .photo-gallery li div {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
 }
 @media screen and (min-width: 48em) {
   .photo-gallery li div {
@@ -993,6 +1007,11 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
 .photo-gallery li div p {
   color: transparent;
 }
+@media screen and (max-height: 749px) and (max-width: 915px) {
+  .photo-gallery li div p {
+    color: transparent;
+  }
+}
 @media screen and (min-width: 48em) {
   .photo-gallery li div p {
     color: inherit;
@@ -1008,6 +1027,19 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
   border: 0;
   background: transparent;
   cursor: pointer;
+}
+@media screen and (max-height: 749px) and (max-width: 915px) {
+  .photo-gallery li div button {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
 }
 @media screen and (min-width: 48em) {
   .photo-gallery li div button {
@@ -1037,6 +1069,18 @@ a[href^=http].ext::after, a[href^="https://"].ext::after {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+@media screen and (max-height: 749px) and (max-width: 915px) {
+  .photo-gallery li div button span {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
 }
 @media screen and (min-width: 48em) {
   .photo-gallery li div button span {
