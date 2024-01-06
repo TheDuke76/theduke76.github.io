@@ -861,6 +861,10 @@ ul {
   }
 }
 
+.cover {
+  align-self: center;
+}
+
 @media screen and (min-width: 1000px) {
   .skew-box {
     transform: skew(20deg);
