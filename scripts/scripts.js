@@ -1,18 +1,10 @@
   const clickableElements = document.querySelectorAll('.js-toggle');
-  const externalLink = document.querySelectorAll('.js-ext');
 
   clickableElements.forEach(function(element) {
     element.addEventListener('click', function() {
       this.parentNode.classList.toggle('open');
     })
   });
-
-  externalLink.forEach(function(element) {
-    element.addEventListener('click', function() {
-      this.parentNode.classList.toggle('open');
-    })
-  });
-
 
   // Function to open the modal
   function openModalImg() {
@@ -62,7 +54,7 @@
   });
 
   // Close modal when the close button is clicked
-  const closeModalButton = document.querySelectorAll('.js-close-modal');
+  const closeModalButton = document.querySelectorAll('.js-close-modal, .js-ext-link');
   closeModalButton.forEach(function(element) {
       element.addEventListener('click', closeModal);    
   });
